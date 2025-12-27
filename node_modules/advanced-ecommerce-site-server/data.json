@@ -1,0 +1,218 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Wireless Headphones",
+      "price": 15000,
+      "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500",
+      "description": "Premium sound quality with noise cancellation",
+      "stock": 50,
+      "category": "Electronics",
+      "mostOrdered": true,
+      "isNew": false
+    },
+    {
+      "id": "2",
+      "name": "Smart Watch",
+      "price": 25000,
+      "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500",
+      "description": "Track your fitness and stay connected",
+      "stock": 100,
+      "category": "Electronics",
+      "mostOrdered": false,
+      "isNew": true
+    },
+    {
+      "id": "3",
+      "name": "Laptop Backpack",
+      "price": 8000,
+      "image": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=500",
+      "description": "Durable and spacious for daily commute",
+      "stock": 75,
+      "category": "Accessories",
+      "mostOrdered": true,
+      "isNew": false
+    },
+    {
+      "id": "4",
+      "name": "Bluetooth Speaker",
+      "price": 12000,
+      "image": "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=500",
+      "description": "Portable speaker with powerful bass",
+      "stock": 200,
+      "category": "Electronics",
+      "mostOrdered": true,
+      "isNew": false
+    },
+    {
+      "id": "5",
+      "name": "Wireless Mouse",
+      "price": 4500,
+      "image": "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=500",
+      "description": "Ergonomic design with precision tracking",
+      "stock": 40,
+      "category": "Electronics",
+      "mostOrdered": false,
+      "isNew": true
+    },
+    {
+      "id": "6",
+      "name": "USB-C Hub",
+      "price": 6000,
+      "image": "https://images.unsplash.com/photo-1625948515291-69613efd103f?w=500",
+      "description": "Multi-port adapter for all your devices",
+      "stock": 60,
+      "category": "Accessories",
+      "mostOrdered": true,
+      "isNew": false
+    },
+    {
+      "id": "7",
+      "name": "Mechanical Keyboard",
+      "price": 18000,
+      "image": "https://images.unsplash.com/photo-1595225476474-87563907a212?w=500",
+      "description": "RGB backlit mechanical gaming keyboard",
+      "stock": 45,
+      "category": "Electronics",
+      "mostOrdered": false,
+      "isNew": true
+    },
+    {
+      "id": "8",
+      "name": "Wireless Earbuds",
+      "price": 22000,
+      "image": "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=500",
+      "description": "True wireless earbuds with charging case",
+      "stock": 85,
+      "category": "Electronics",
+      "mostOrdered": true,
+      "isNew": false
+    },
+    {
+      "id": "10",
+      "name": "Phone Stand",
+      "price": 3500,
+      "image": "https://images.unsplash.com/photo-1556656793-08538906a9f8?w=500",
+      "description": "Adjustable aluminum phone holder",
+      "stock": 90,
+      "category": "Accessories",
+      "mostOrdered": false,
+      "isNew": false
+    },
+    {
+      "id": "11",
+      "name": "Webcam HD",
+      "price": 16000,
+      "image": "https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?w=500",
+      "description": "1080p webcam for video calls and streaming",
+      "stock": 55,
+      "category": "Electronics",
+      "mostOrdered": true,
+      "isNew": false
+    },
+    {
+      "id": "12",
+      "name": "Gaming Mouse Pad",
+      "price": 5000,
+      "image": "https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?w=500",
+      "description": "Large RGB gaming mouse pad",
+      "stock": 150,
+      "category": "Accessories",
+      "mostOrdered": false,
+      "isNew": true
+    },
+    {
+      "id": "13",
+      "name": "USB Flash Drive",
+      "price": 4000,
+      "image": "https://images.unsplash.com/photo-1624823183493-ed5832f48f18?w=500",
+      "description": "128GB high-speed USB 3.0 flash drive",
+      "stock": 200,
+      "category": "Accessories",
+      "mostOrdered": false,
+      "isNew": false
+    },
+    {
+      "id": "14",
+      "name": "Laptop Stand",
+      "price": 9500,
+      "image": "https://images.unsplash.com/photo-1625225233840-695456021cde?w=500",
+      "description": "Ergonomic aluminum laptop stand",
+      "stock": 65,
+      "category": "Accessories",
+      "mostOrdered": true,
+      "isNew": false
+    },
+    {
+      "id": "15",
+      "name": "Desk Lamp LED",
+      "price": 8500,
+      "image": "https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?w=500",
+      "description": "Adjustable LED desk lamp with USB charging",
+      "stock": 70,
+      "category": "Accessories",
+      "mostOrdered": false,
+      "isNew": true
+    }
+  ],
+  "orders": [
+    {
+      "id": "2081eb47-555f-4d10-b1f0-ca1be04f7c6f",
+      "buyer": {
+        "name": "NDIMIH BOCLAIR NGHOCHU",
+        "email": "ndimihboclair4@gmail.com",
+        "phone": "+237652882753",
+        "address": "Mile 6 Nkwen"
+      },
+      "region": "Douala",
+      "shippingFee": 0,
+      "totals": {
+        "subtotal": 33000,
+        "tax": 3300,
+        "total": 36300
+      },
+      "items": [
+        {
+          "id": "2",
+          "name": "Smart Watch",
+          "price": 25000,
+          "quantity": 1,
+          "selectedVariant": "default",
+          "selectedImageUrl": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500",
+          "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500"
+        },
+        {
+          "id": "3",
+          "name": "Laptop Backpack",
+          "price": 8000,
+          "quantity": 1,
+          "selectedVariant": "default",
+          "selectedImageUrl": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=500",
+          "image": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=500"
+        }
+      ],
+      "status": "delivered",
+      "notes": "",
+      "createdAt": "2025-12-27T01:35:33.302Z"
+    }
+  ],
+  "users": [],
+  "categories": [],
+  "admin": {
+    "email": "ndimihboclair4@gmail.com",
+    "password": "$2a$10$KnMNeVUCwffRuwp3F1U/ZeCZGEQcBW8GGtdVzSgaiypdGtR5KzLye"
+  },
+  "subAdmins": [],
+  "shippingFees": {
+    "Douala": 0,
+    "Yaoundé": 3000,
+    "Bafoussam": 5000,
+    "Bamenda": 6000,
+    "Garoua": 8000,
+    "Maroua": 9000,
+    "Ngaoundéré": 7000,
+    "Bertoua": 6500,
+    "Buea": 2000,
+    "Limbe": 2500
+  }
+}

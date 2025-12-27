@@ -1,0 +1,17 @@
+{
+  "name": "advanced-ecommerce-site",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "server",
+    "client"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm:dev --workspace=server\" \"npm:dev --workspace=client\"",
+    "start": "node server/index.js",
+    "build": "npm --workspace=client run build"
+  },
+  "dependencies": {
+    "concurrently": "^8.0.0"
+  }
+}
