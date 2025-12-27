@@ -191,9 +191,10 @@
           "image": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=500"
         }
       ],
-      "status": "delivered",
+      "status": "cancelled",
       "notes": "",
-      "createdAt": "2025-12-27T01:35:33.302Z"
+      "createdAt": "2025-12-27T01:35:33.302Z",
+      "deliveryAgency": ""
     }
   ],
   "users": [],
@@ -213,6 +214,7 @@
     "Ngaoundéré": 7000,
     "Bertoua": 6500,
     "Buea": 2000,
-    "Limbe": 2500
+    "Limbe": 2500,
+    "Bafang": 2000
   }
 }

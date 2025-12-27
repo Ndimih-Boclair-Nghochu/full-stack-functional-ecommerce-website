@@ -106,7 +106,8 @@ app.post('/api/orders', (req, res) => {
       name: buyer.name || '',
       email: buyer.email || '',
       phone: buyer.phone || '',
-      address: buyer.address || ''
+      address: buyer.address || '',
+      agencies: buyer.agencies || []
     },
     region: region || 'Unknown',
     shippingFee: typeof shippingFee === 'number' ? shippingFee : 0,
@@ -124,12 +125,32 @@ app.post('/api/orders', (req, res) => {
       total: totals?.total ?? 0
     },
     status: 'pending',
+    deliveryAgency: '',
     notes: notes || '',
     createdAt: new Date().toISOString()
   };
   data.orders.push(order);
   save();
   res.json(order);
+});
+
+// Search orders by email or phone (for customers to track orders)
+app.get('/api/orders/search', (req, res) => {
+  const { email, phone } = req.query;
+  if (!email && !phone) {
+    return res.status(400).json({ error: 'Email or phone required' });
+  }
+  
+  const matchingOrders = data.orders.filter(order => {
+    if (email && order.buyer?.email?.toLowerCase() === email.toLowerCase()) return true;
+    if (phone && order.buyer?.phone === phone) return true;
+    return false;
+  });
+  
+  // Sort by most recent first
+  matchingOrders.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt));
+  
+  res.json(matchingOrders);
 });
 
 // Admin login
@@ -279,8 +300,9 @@ app.put('/api/admin/orders/:id', (req, res) => {
     jwt.verify(token, 'secret_key');
     const index = data.orders.findIndex(o => o.id === req.params.id);
     if (index === -1) return res.status(404).json({ error: 'Order not found' });
-    const { status } = req.body;
+    const { status, deliveryAgency } = req.body;
     if (status) data.orders[index].status = status;
+    if (deliveryAgency !== undefined) data.orders[index].deliveryAgency = deliveryAgency;
     save();
     res.json(data.orders[index]);
   } catch {

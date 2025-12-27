@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
+import Receipt from '../components/Receipt'
 
 export default function AdminDashboard() {
   const navigate = useNavigate()
@@ -21,6 +22,8 @@ export default function AdminDashboard() {
   const [newTown, setNewTown] = useState('')
   const [newTownFee, setNewTownFee] = useState('')
   const [viewOrder, setViewOrder] = useState(null)
+  const [receiptOrder, setReceiptOrder] = useState(null)
+  const [mainShopTown, setMainShopTown] = useState('Douala')
 
   const shippingKeys = Object.keys(shippingForm || {})
 
@@ -399,7 +402,7 @@ export default function AdminDashboard() {
                         />
                         <span className="font-semibold">All Regions</span>
                       </label>
-                      {allowedRegions.map(region => (
+                      {shippingKeys.map(region => (
                         <label key={region} className="flex items-center gap-2 cursor-pointer">
                           <input
                             type="checkbox"
@@ -508,12 +511,42 @@ export default function AdminDashboard() {
               <button onClick={fetchShippingFees} className="bg-gray-200 hover:bg-gray-300 text-gray-800 px-4 py-2 rounded-lg font-semibold">Refresh</button>
             </div>
             <div className="bg-white rounded-xl shadow-md p-8">
+              {/* Main Shop Location Section */}
+              <div className="mb-8 p-6 bg-gradient-to-r from-purple-50 to-blue-50 border-2 border-purple-200 rounded-lg">
+                <h3 className="text-xl font-bold text-gray-900 mb-4">🏪 Main Shop Location</h3>
+                <div className="flex items-center gap-4 flex-wrap">
+                  <div className="flex-1 min-w-80">
+                    <label className="block font-semibold text-gray-700 mb-2">Select Main Town</label>
+                    <select 
+                      value={mainShopTown} 
+                      onChange={(e) => setMainShopTown(e.target.value)}
+                      className="w-full px-4 py-2 border-2 border-purple-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-600 bg-white"
+                    >
+                      {shippingKeys.length === 0 ? (
+                        <option>No towns available</option>
+                      ) : (
+                        shippingKeys.map(town => (
+                          <option key={town} value={town}>{town}</option>
+                        ))
+                      )}
+                    </select>
+                    <p className="text-sm text-gray-600 mt-2">
+                      💡 This is where your main shop is based. Free shipping available for orders over 50,000 XAF in this town.
+                    </p>
+                  </div>
+                  <div className="bg-white p-4 rounded-lg border border-gray-200 text-center">
+                    <p className="text-sm text-gray-600 mb-1">Current Main Location</p>
+                    <p className="text-2xl font-bold text-purple-600">{mainShopTown}</p>
+                  </div>
+                </div>
+              </div>
+
               <form onSubmit={async (e) => {
                 e.preventDefault()
                 setLoadingShipping(true)
                 try {
                   const payload = {}
-                  for (const region of allowedRegions) {
+                  for (const region of shippingKeys) {
                     const val = Number(shippingForm[region] ?? 0)
                     payload[region] = isNaN(val) ? 0 : val
                   }
@@ -527,10 +560,35 @@ export default function AdminDashboard() {
                   setTimeout(() => setMessage({ type: '', text: '' }), 3000)
                 }
               }}>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-6">
                   {shippingKeys.map(region => (
-                    <div key={region} className="">
-                      <label className="block font-semibold text-gray-700 mb-2">{region}</label>
+                    <div key={region} className="relative">
+                      <div className="flex items-center justify-between mb-2">
+                        <label className="block font-semibold text-gray-700">{region}</label>
+                        <button
+                          type="button"
+                          onClick={async () => {
+                            if (window.confirm(`Delete ${region}? This will remove it permanently.`)) {
+                              try {
+                                const updated = { ...shippingForm }
+                                delete updated[region]
+                                await axios.put('/api/admin/shipping-fees', updated, { headers: { Authorization: `Bearer ${token}` } })
+                                setMessage({ type: 'success', text: `Deleted ${region}` })
+                                if (mainShopTown === region) setMainShopTown(Object.keys(updated)[0] || 'Douala')
+                                fetchShippingFees()
+                              } catch (err) {
+                                setMessage({ type: 'error', text: err.response?.data?.error || 'Failed to delete town' })
+                              } finally {
+                                setTimeout(() => setMessage({ type: '', text: '' }), 3000)
+                              }
+                            }
+                          }}
+                          className="text-red-500 hover:text-red-700 transition text-sm font-semibold"
+                          title={`Delete ${region}`}
+                        >
+                          🗑️ Delete
+                        </button>
+                      </div>
                       <input type="number" value={shippingForm[region] ?? 0} onChange={(e) => setShippingForm({ ...shippingForm, [region]: e.target.value })} className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600" />
                       <p className="text-sm text-gray-500 mt-1">XAF</p>
                     </div>
@@ -603,8 +661,27 @@ export default function AdminDashboard() {
                         <td className="px-6 py-4 font-bold text-gray-900">XAF {(order.totals?.total || 0).toLocaleString()}</td>
                         <td className="px-6 py-4">
                           <select value={order.status} onChange={async (e) => {
+                            const newStatus = e.target.value
+                            let deliveryAgency = order.deliveryAgency || ''
+                            
+                            // If status is delivered or cancelled, ask for agency
+                            if (newStatus === 'delivered' || newStatus === 'cancelled') {
+                              const agencies = order.buyer?.agencies || []
+                              if (agencies.length > 0) {
+                                const agencyOptions = agencies.map((ag, i) => `${i + 1}. ${ag}`).join('\n')
+                                const choice = prompt(`Select delivery agency:\n${agencyOptions}\n\nEnter the number (1-${agencies.length}):`)
+                                const index = parseInt(choice) - 1
+                                if (index >= 0 && index < agencies.length) {
+                                  deliveryAgency = agencies[index]
+                                } else {
+                                  alert('Invalid selection. Please try again.')
+                                  return
+                                }
+                              }
+                            }
+                            
                             try {
-                              const resp = await axios.put(`/api/admin/orders/${order.id}`, { status: e.target.value }, { headers: { Authorization: `Bearer ${token}` } })
+                              const resp = await axios.put(`/api/admin/orders/${order.id}`, { status: newStatus, deliveryAgency }, { headers: { Authorization: `Bearer ${token}` } })
                               setOrders(orders.map(o => o.id === order.id ? resp.data : o))
                             } catch (err) { setMessage({ type: 'error', text: 'Failed to update status' }); setTimeout(() => setMessage({ type: '', text: '' }), 2000) }
                           }} className="px-3 py-2 border border-gray-300 rounded-lg">
@@ -613,6 +690,7 @@ export default function AdminDashboard() {
                         </td>
                         <td className="px-6 py-4 flex gap-2">
                           <button onClick={() => setViewOrder(order)} className="bg-blue-600 hover:bg-blue-700 text-white px-3 py-1 rounded-lg text-sm font-semibold transition">View</button>
+                          <button onClick={() => setReceiptOrder(order)} className="bg-purple-600 hover:bg-purple-700 text-white px-3 py-1 rounded-lg text-sm font-semibold transition">Receipt</button>
                           <button onClick={async () => {
                             if (!window.confirm('Delete this order?')) return
                             try {
@@ -628,6 +706,14 @@ export default function AdminDashboard() {
               </table>
             </div>
           </div>
+        )}
+
+        {/* Receipt Modal */}
+        {receiptOrder && (
+          <Receipt 
+            order={receiptOrder} 
+            onClose={() => setReceiptOrder(null)}
+          />
         )}
 
         {/* Order Detail Modal */}

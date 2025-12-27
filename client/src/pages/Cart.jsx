@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import axios from 'axios'
+import Receipt from '../components/Receipt'
 
 export default function Cart({ cart, removeFromCart, updateQuantity, clearCart, subtotal, total }) {
   const [showSignupModal, setShowSignupModal] = useState(false)
@@ -11,8 +12,10 @@ export default function Cart({ cart, removeFromCart, updateQuantity, clearCart, 
     name: '',
     email: '',
     phone: '',
-    address: ''
+    address: '',
+    agencies: ['', '', '']
   })
+  const [orderReceipt, setOrderReceipt] = useState(null)
 
   useEffect(() => {
     axios.get('/api/shipping-fees').then(res => {
@@ -59,9 +62,14 @@ export default function Cart({ cart, removeFromCart, updateQuantity, clearCart, 
       alert('Please fill in all your information before checkout')
       return
     }
+    const filledAgencies = buyerInfo.agencies.filter(a => a.trim() !== '')
+    if (filledAgencies.length < 3) {
+      alert('Please provide at least 3 nearby agencies for delivery')
+      return
+    }
     try {
       const payload = {
-        buyer: buyerInfo,
+        buyer: { ...buyerInfo, agencies: filledAgencies },
         region: selectedRegion,
         shippingFee: finalShipping,
         totals: { subtotal, total: finalTotal },
@@ -79,7 +87,7 @@ export default function Cart({ cart, removeFromCart, updateQuantity, clearCart, 
         })
       }
       const resp = await axios.post('/api/orders', payload)
-      alert('Order placed successfully!')
+      setOrderReceipt(resp.data)
       clearCart()
     } catch (err) {
       alert('Failed to place order')
@@ -88,6 +96,14 @@ export default function Cart({ cart, removeFromCart, updateQuantity, clearCart, 
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-50 via-blue-50 to-indigo-50 py-12">
+      {/* Receipt Modal */}
+      {orderReceipt && (
+        <Receipt 
+          order={orderReceipt} 
+          onClose={() => setOrderReceipt(null)}
+        />
+      )}
+
       {/* Signup Modal for Out-of-City Customers */}
       {showSignupModal && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
@@ -339,6 +355,32 @@ export default function Cart({ cart, removeFromCart, updateQuantity, clearCart, 
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-600"
                     />
                   </div>
+                  
+                  {/* Nearby Agencies */}
+                  <div className="border-t border-gray-200 pt-4">
+                    <label className="block text-sm font-semibold text-gray-700 mb-2">
+                      🏢 Nearby Agencies (At least 3 required) *
+                    </label>
+                    <p className="text-xs text-gray-600 mb-3">
+                      Provide 3 nearby agencies where you can collect your order
+                    </p>
+                    {[0, 1, 2].map((index) => (
+                      <div key={index} className="mb-3">
+                        <input
+                          type="text"
+                          value={buyerInfo.agencies[index] || ''}
+                          onChange={(e) => {
+                            const newAgencies = [...buyerInfo.agencies]
+                            newAgencies[index] = e.target.value
+                            handleBuyerInfoChange('agencies', newAgencies)
+                          }}
+                          placeholder={`Agency ${index + 1} (e.g., Express Union Bonanjo)`}
+                          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-600"
+                        />
+                      </div>
+                    ))}
+                  </div>
+
                   <div>
                     <label className="block text-sm font-semibold text-gray-700 mb-2">
                       🌍 Delivery Region *

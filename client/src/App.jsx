@@ -5,6 +5,7 @@ import Home from './pages/Home'
 import AllProducts from './pages/AllProducts'
 import Wishlist from './pages/Wishlist'
 import Cart from './pages/Cart'
+import OrderTracking from './pages/OrderTracking'
 import AdminLogin from './pages/AdminLogin'
 import AdminDashboard from './pages/AdminDashboard'
 
@@ -80,8 +81,9 @@ export default function App() {
             </Link>
             <Link to="/products" className="text-gray-700 hover:text-purple-600 font-semibold transition">
               All Products
-            </Link>
-            <Link to="/wishlist" className="text-gray-700 hover:text-purple-600 font-semibold transition flex items-center gap-1">
+            </Link>            <Link to="/track-order" className="text-gray-700 hover:text-purple-600 font-semibold transition">
+              Track Order
+            </Link>            <Link to="/wishlist" className="text-gray-700 hover:text-purple-600 font-semibold transition flex items-center gap-1">
               ❤️ Wishlist ({wishlist.length})
             </Link>
             <Link to="/admin" className="text-gray-700 hover:text-purple-600 font-semibold transition flex items-center gap-1">
@@ -102,6 +104,7 @@ export default function App() {
         <Route path="/products" element={<AllProducts addToCart={addToCart} toggleWishlist={toggleWishlist} isInWishlist={isInWishlist} />} />
         <Route path="/wishlist" element={<Wishlist wishlist={wishlist} addToCart={addToCart} toggleWishlist={toggleWishlist} />} />
         <Route path="/cart" element={<Cart cart={cart} removeFromCart={removeFromCart} updateQuantity={updateQuantity} clearCart={clearCart} subtotal={subtotal} total={total} />} />
+        <Route path="/track-order" element={<OrderTracking />} />
         <Route path="/admin" element={<AdminLogin />} />
         <Route path="/admin-dashboard" element={<AdminDashboard />} />
       </Routes>
@@ -116,6 +119,7 @@ export default function App() {
           <div className="flex justify-center gap-6 mb-4">
             <Link to="/" className="text-gray-600 hover:text-purple-600 transition">Home</Link>
             <Link to="/products" className="text-gray-600 hover:text-purple-600 transition">Products</Link>
+            <Link to="/track-order" className="text-gray-600 hover:text-purple-600 transition">Track Order</Link>
           </div>
           <p className="text-sm text-gray-400">© 2025 MyShop. All Rights Reserved.</p>
         </div>
