@@ -6,10 +6,23 @@
       "price": 15000,
       "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500",
       "description": "Premium sound quality with noise cancellation",
-      "stock": 50,
+      "stock": "1",
       "category": "Electronics",
       "mostOrdered": true,
-      "isNew": false
+      "isNew": false,
+      "availableRegions": [
+        "Yaoundé",
+        "Douala",
+        "Garoua",
+        "Ngaoundéré",
+        "Bertoua"
+      ],
+      "images": [
+        {
+          "color": "default",
+          "url": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500"
+        }
+      ]
     },
     {
       "id": "2",
@@ -17,10 +30,19 @@
       "price": 25000,
       "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500",
       "description": "Track your fitness and stay connected",
-      "stock": 100,
+      "stock": "0",
       "category": "Electronics",
       "mostOrdered": false,
-      "isNew": true
+      "isNew": true,
+      "availableRegions": [
+        "ALL"
+      ],
+      "images": [
+        {
+          "color": "default",
+          "url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500"
+        }
+      ]
     },
     {
       "id": "3",
@@ -157,55 +179,5252 @@
   ],
   "orders": [
     {
-      "id": "2081eb47-555f-4d10-b1f0-ca1be04f7c6f",
+      "id": "deed0cda-97f2-4c40-8da7-9b687d2efbbc",
       "buyer": {
-        "name": "NDIMIH BOCLAIR NGHOCHU",
-        "email": "ndimihboclair4@gmail.com",
-        "phone": "+237652882753",
-        "address": "Mile 6 Nkwen"
+        "name": "Marie Martin",
+        "email": "marie.martin@example.cm",
+        "phone": "+237 6 43691000",
+        "address": "123 Limbe"
+      },
+      "region": "Limbe",
+      "shippingFee": 2500,
+      "items": [
+        {
+          "id": "10",
+          "name": "Phone Stand",
+          "price": 3500,
+          "quantity": 1,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1556656793-08538906a9f8?w=500"
+        },
+        {
+          "id": "14",
+          "name": "Laptop Stand",
+          "price": 9500,
+          "quantity": 1,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1625225233840-695456021cde?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 13000,
+        "tax": 650,
+        "total": 16150
+      },
+      "status": "pending",
+      "createdAt": "2025-12-22T08:19:14.557Z"
+    },
+    {
+      "id": "ef7cebec-ae0d-4680-a055-89e0a06e0381",
+      "buyer": {
+        "name": "Jean Dupont",
+        "email": "jean.dupont@example.cm",
+        "phone": "+237 6 2991000",
+        "address": "123 Limbe"
+      },
+      "region": "Limbe",
+      "shippingFee": 2500,
+      "items": [
+        {
+          "id": "4",
+          "name": "Bluetooth Speaker",
+          "price": 12000,
+          "quantity": 3,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=500"
+        },
+        {
+          "id": "10",
+          "name": "Phone Stand",
+          "price": 3500,
+          "quantity": 1,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1556656793-08538906a9f8?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 39500,
+        "tax": 1975,
+        "total": 43975
+      },
+      "status": "shipped",
+      "createdAt": "2025-12-25T19:19:14.557Z"
+    },
+    {
+      "id": "a6242479-59d6-4eb6-b8e7-2d1ad649bb86",
+      "buyer": {
+        "name": "Sophie Robert",
+        "email": "sophie.robert@example.cm",
+        "phone": "+237 6 48371000",
+        "address": "123 Douala"
       },
       "region": "Douala",
       "shippingFee": 0,
+      "items": [
+        {
+          "id": "13",
+          "name": "USB Flash Drive",
+          "price": 4000,
+          "quantity": 2,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1624823183493-ed5832f48f18?w=500"
+        },
+        {
+          "id": "11",
+          "name": "Webcam HD",
+          "price": 16000,
+          "quantity": 3,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?w=500"
+        },
+        {
+          "id": "1",
+          "name": "Wireless Headphones",
+          "price": 15000,
+          "quantity": 1,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500"
+        }
+      ],
       "totals": {
-        "subtotal": 33000,
-        "tax": 3300,
-        "total": 36300
+        "subtotal": 71000,
+        "tax": 3550,
+        "total": 74550
       },
+      "status": "pending",
+      "createdAt": "2025-12-25T00:19:14.557Z"
+    },
+    {
+      "id": "5c1efd5b-c25d-4a7f-bfb2-2ea15d92dd7e",
+      "buyer": {
+        "name": "Marie Martin",
+        "email": "marie.martin@example.cm",
+        "phone": "+237 6 88551000",
+        "address": "123 Bamenda"
+      },
+      "region": "Bamenda",
+      "shippingFee": 6000,
+      "items": [
+        {
+          "id": "3",
+          "name": "Laptop Backpack",
+          "price": 8000,
+          "quantity": 2,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=500"
+        },
+        {
+          "id": "6",
+          "name": "USB-C Hub",
+          "price": 6000,
+          "quantity": 1,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1625948515291-69613efd103f?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 22000,
+        "tax": 1100,
+        "total": 29100
+      },
+      "status": "delivered",
+      "createdAt": "2025-12-16T05:19:14.557Z"
+    },
+    {
+      "id": "f29835d3-dbdc-4b93-b666-13187cf83baf",
+      "buyer": {
+        "name": "Paul Bernard",
+        "email": "paul.bernard@example.cm",
+        "phone": "+237 6 85281000",
+        "address": "123 Yaoundé"
+      },
+      "region": "Yaoundé",
+      "shippingFee": 3000,
+      "items": [
+        {
+          "id": "3",
+          "name": "Laptop Backpack",
+          "price": 8000,
+          "quantity": 1,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 8000,
+        "tax": 400,
+        "total": 11400
+      },
+      "status": "pending",
+      "createdAt": "2025-11-30T13:19:14.557Z"
+    },
+    {
+      "id": "6bbfafab-e5af-4096-b4c9-2c15294156a6",
+      "buyer": {
+        "name": "Marie Martin",
+        "email": "marie.martin@example.cm",
+        "phone": "+237 6 25631000",
+        "address": "123 Bertoua"
+      },
+      "region": "Bertoua",
+      "shippingFee": 6500,
+      "items": [
+        {
+          "id": "5",
+          "name": "Wireless Mouse",
+          "price": 4500,
+          "quantity": 3,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=500"
+        },
+        {
+          "id": "2",
+          "name": "Smart Watch",
+          "price": 25000,
+          "quantity": 2,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500"
+        },
+        {
+          "id": "1",
+          "name": "Wireless Headphones",
+          "price": 15000,
+          "quantity": 3,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 108500,
+        "tax": 5425,
+        "total": 120425
+      },
+      "status": "delivered",
+      "createdAt": "2025-12-17T00:19:14.557Z"
+    },
+    {
+      "id": "245a525a-bde6-40af-93df-17919902ce4b",
+      "buyer": {
+        "name": "François Moreau",
+        "email": "françois.moreau@example.cm",
+        "phone": "+237 6 21901000",
+        "address": "123 Limbe"
+      },
+      "region": "Limbe",
+      "shippingFee": 2500,
+      "items": [
+        {
+          "id": "3",
+          "name": "Laptop Backpack",
+          "price": 8000,
+          "quantity": 2,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 16000,
+        "tax": 800,
+        "total": 19300
+      },
+      "status": "pending",
+      "createdAt": "2025-12-15T03:19:14.557Z"
+    },
+    {
+      "id": "b3f4fdd9-80ba-4db7-975a-4eedf696293f",
+      "buyer": {
+        "name": "Paul Bernard",
+        "email": "paul.bernard@example.cm",
+        "phone": "+237 6 54981000",
+        "address": "123 Ngaoundéré"
+      },
+      "region": "Ngaoundéré",
+      "shippingFee": 7000,
+      "items": [
+        {
+          "id": "14",
+          "name": "Laptop Stand",
+          "price": 9500,
+          "quantity": 2,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1625225233840-695456021cde?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 19000,
+        "tax": 950,
+        "total": 26950
+      },
+      "status": "shipped",
+      "createdAt": "2025-12-14T17:19:14.557Z"
+    },
+    {
+      "id": "123c1a13-42c1-4717-944c-b7d5869f4357",
+      "buyer": {
+        "name": "Pierre Thomas",
+        "email": "pierre.thomas@example.cm",
+        "phone": "+237 6 75391000",
+        "address": "123 Ngaoundéré"
+      },
+      "region": "Ngaoundéré",
+      "shippingFee": 7000,
+      "items": [
+        {
+          "id": "1",
+          "name": "Wireless Headphones",
+          "price": 15000,
+          "quantity": 1,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500"
+        },
+        {
+          "id": "4",
+          "name": "Bluetooth Speaker",
+          "price": 12000,
+          "quantity": 3,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=500"
+        },
+        {
+          "id": "5",
+          "name": "Wireless Mouse",
+          "price": 4500,
+          "quantity": 3,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 64500,
+        "tax": 3225,
+        "total": 74725
+      },
+      "status": "pending",
+      "createdAt": "2025-12-11T08:19:14.557Z"
+    },
+    {
+      "id": "e267faf2-0cb9-4273-baef-7f946b75c35e",
+      "buyer": {
+        "name": "Jean Dupont",
+        "email": "jean.dupont@example.cm",
+        "phone": "+237 6 58241000",
+        "address": "123 Bafoussam"
+      },
+      "region": "Bafoussam",
+      "shippingFee": 5000,
       "items": [
         {
           "id": "2",
           "name": "Smart Watch",
           "price": 25000,
+          "quantity": 3,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500"
+        },
+        {
+          "id": "1",
+          "name": "Wireless Headphones",
+          "price": 15000,
+          "quantity": 3,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 120000,
+        "tax": 6000,
+        "total": 131000
+      },
+      "status": "processing",
+      "createdAt": "2025-12-18T11:19:14.557Z"
+    },
+    {
+      "id": "53c2d9cc-e8b0-487d-a1b9-b8ac1f4e28b3",
+      "buyer": {
+        "name": "André Richard",
+        "email": "andré.richard@example.cm",
+        "phone": "+237 6 1331000",
+        "address": "123 Bertoua"
+      },
+      "region": "Bertoua",
+      "shippingFee": 6500,
+      "items": [
+        {
+          "id": "3",
+          "name": "Laptop Backpack",
+          "price": 8000,
+          "quantity": 3,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=500"
+        },
+        {
+          "id": "8",
+          "name": "Wireless Earbuds",
+          "price": 22000,
+          "quantity": 3,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 90000,
+        "tax": 4500,
+        "total": 101000
+      },
+      "status": "pending",
+      "createdAt": "2025-12-25T04:19:14.557Z"
+    },
+    {
+      "id": "9328ba4b-4a05-4a69-a1a0-057622d61bfe",
+      "buyer": {
+        "name": "Jean Dupont",
+        "email": "jean.dupont@example.cm",
+        "phone": "+237 6 57611000",
+        "address": "123 Buea"
+      },
+      "region": "Buea",
+      "shippingFee": 2000,
+      "items": [
+        {
+          "id": "2",
+          "name": "Smart Watch",
+          "price": 25000,
+          "quantity": 3,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 75000,
+        "tax": 3750,
+        "total": 80750
+      },
+      "status": "processing",
+      "createdAt": "2025-12-07T23:19:14.557Z"
+    },
+    {
+      "id": "759dc4ae-3e0b-40a1-a877-a209c366ac07",
+      "buyer": {
+        "name": "Pierre Thomas",
+        "email": "pierre.thomas@example.cm",
+        "phone": "+237 6 82971000",
+        "address": "123 Ngaoundéré"
+      },
+      "region": "Ngaoundéré",
+      "shippingFee": 7000,
+      "items": [
+        {
+          "id": "11",
+          "name": "Webcam HD",
+          "price": 16000,
+          "quantity": 2,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?w=500"
+        },
+        {
+          "id": "4",
+          "name": "Bluetooth Speaker",
+          "price": 12000,
+          "quantity": 3,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 68000,
+        "tax": 3400,
+        "total": 78400
+      },
+      "status": "delivered",
+      "createdAt": "2025-12-06T07:19:14.557Z"
+    },
+    {
+      "id": "0cd68d49-8001-4b2b-94ca-876434f96957",
+      "buyer": {
+        "name": "Luc Laurent",
+        "email": "luc.laurent@example.cm",
+        "phone": "+237 6 88351000",
+        "address": "123 Yaoundé"
+      },
+      "region": "Yaoundé",
+      "shippingFee": 3000,
+      "items": [
+        {
+          "id": "2",
+          "name": "Smart Watch",
+          "price": 25000,
+          "quantity": 3,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 75000,
+        "tax": 3750,
+        "total": 81750
+      },
+      "status": "pending",
+      "createdAt": "2025-12-13T19:19:14.557Z"
+    },
+    {
+      "id": "7b5c7732-3275-49fb-89db-57d5098bf87f",
+      "buyer": {
+        "name": "Anne Simon",
+        "email": "anne.simon@example.cm",
+        "phone": "+237 6 56121000",
+        "address": "123 Bafoussam"
+      },
+      "region": "Bafoussam",
+      "shippingFee": 5000,
+      "items": [
+        {
+          "id": "8",
+          "name": "Wireless Earbuds",
+          "price": 22000,
+          "quantity": 2,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=500"
+        },
+        {
+          "id": "3",
+          "name": "Laptop Backpack",
+          "price": 8000,
+          "quantity": 3,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=500"
+        },
+        {
+          "id": "2",
+          "name": "Smart Watch",
+          "price": 25000,
+          "quantity": 2,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 118000,
+        "tax": 5900,
+        "total": 128900
+      },
+      "status": "pending",
+      "createdAt": "2025-12-11T10:19:14.557Z"
+    },
+    {
+      "id": "25ae6501-42de-4ee9-a262-e47555bd52e8",
+      "buyer": {
+        "name": "Jean Dupont",
+        "email": "jean.dupont@example.cm",
+        "phone": "+237 6 56811000",
+        "address": "123 Bertoua"
+      },
+      "region": "Bertoua",
+      "shippingFee": 6500,
+      "items": [
+        {
+          "id": "15",
+          "name": "Desk Lamp LED",
+          "price": 8500,
+          "quantity": 2,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?w=500"
+        },
+        {
+          "id": "1",
+          "name": "Wireless Headphones",
+          "price": 15000,
+          "quantity": 2,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 47000,
+        "tax": 2350,
+        "total": 55850
+      },
+      "status": "pending",
+      "createdAt": "2025-12-08T09:19:14.557Z"
+    },
+    {
+      "id": "e3b4f3d6-e26e-4225-88b8-3d7fd7a70a90",
+      "buyer": {
+        "name": "Paul Bernard",
+        "email": "paul.bernard@example.cm",
+        "phone": "+237 6 77171000",
+        "address": "123 Douala"
+      },
+      "region": "Douala",
+      "shippingFee": 0,
+      "items": [
+        {
+          "id": "5",
+          "name": "Wireless Mouse",
+          "price": 4500,
           "quantity": 1,
-          "selectedVariant": "default",
-          "selectedImageUrl": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500",
-          "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500"
+          "selectedImageUrl": "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 4500,
+        "tax": 225,
+        "total": 4725
+      },
+      "status": "pending",
+      "createdAt": "2025-12-21T10:19:14.557Z"
+    },
+    {
+      "id": "caf25684-b298-4b68-b55d-d8b164cb76d6",
+      "buyer": {
+        "name": "Luc Laurent",
+        "email": "luc.laurent@example.cm",
+        "phone": "+237 6 43491000",
+        "address": "123 Maroua"
+      },
+      "region": "Maroua",
+      "shippingFee": 9000,
+      "items": [
+        {
+          "id": "11",
+          "name": "Webcam HD",
+          "price": 16000,
+          "quantity": 1,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?w=500"
+        },
+        {
+          "id": "5",
+          "name": "Wireless Mouse",
+          "price": 4500,
+          "quantity": 1,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 20500,
+        "tax": 1025,
+        "total": 30525
+      },
+      "status": "shipped",
+      "createdAt": "2025-12-15T05:19:14.557Z"
+    },
+    {
+      "id": "b164b207-738a-49a4-be83-26bab4d4c862",
+      "buyer": {
+        "name": "Luc Laurent",
+        "email": "luc.laurent@example.cm",
+        "phone": "+237 6 54081000",
+        "address": "123 Yaoundé"
+      },
+      "region": "Yaoundé",
+      "shippingFee": 3000,
+      "items": [
+        {
+          "id": "11",
+          "name": "Webcam HD",
+          "price": 16000,
+          "quantity": 3,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?w=500"
+        },
+        {
+          "id": "1",
+          "name": "Wireless Headphones",
+          "price": 15000,
+          "quantity": 3,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 93000,
+        "tax": 4650,
+        "total": 100650
+      },
+      "status": "pending",
+      "createdAt": "2025-12-12T14:19:14.557Z"
+    },
+    {
+      "id": "c1752a32-379b-4ff1-af0c-7f80906fad43",
+      "buyer": {
+        "name": "Marie Martin",
+        "email": "marie.martin@example.cm",
+        "phone": "+237 6 51491000",
+        "address": "123 Garoua"
+      },
+      "region": "Garoua",
+      "shippingFee": 8000,
+      "items": [
+        {
+          "id": "11",
+          "name": "Webcam HD",
+          "price": 16000,
+          "quantity": 3,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?w=500"
+        },
+        {
+          "id": "10",
+          "name": "Phone Stand",
+          "price": 3500,
+          "quantity": 3,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1556656793-08538906a9f8?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 58500,
+        "tax": 2925,
+        "total": 69425
+      },
+      "status": "shipped",
+      "createdAt": "2025-12-11T17:19:14.557Z"
+    },
+    {
+      "id": "83c1e1bb-8b52-41ab-b01f-6b678feafae0",
+      "buyer": {
+        "name": "Claude Leclerc",
+        "email": "claude.leclerc@example.cm",
+        "phone": "+237 6 14231000",
+        "address": "123 Garoua"
+      },
+      "region": "Garoua",
+      "shippingFee": 8000,
+      "items": [
+        {
+          "id": "3",
+          "name": "Laptop Backpack",
+          "price": 8000,
+          "quantity": 3,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=500"
+        },
+        {
+          "id": "5",
+          "name": "Wireless Mouse",
+          "price": 4500,
+          "quantity": 2,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 33000,
+        "tax": 1650,
+        "total": 42650
+      },
+      "status": "processing",
+      "createdAt": "2025-12-04T08:19:14.557Z"
+    },
+    {
+      "id": "3f3dc664-fdc6-481d-92ee-0222c08b64e5",
+      "buyer": {
+        "name": "Marie Martin",
+        "email": "marie.martin@example.cm",
+        "phone": "+237 6 13621000",
+        "address": "123 Bertoua"
+      },
+      "region": "Bertoua",
+      "shippingFee": 6500,
+      "items": [
+        {
+          "id": "7",
+          "name": "Mechanical Keyboard",
+          "price": 18000,
+          "quantity": 1,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1595225476474-87563907a212?w=500"
+        },
+        {
+          "id": "12",
+          "name": "Gaming Mouse Pad",
+          "price": 5000,
+          "quantity": 1,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 23000,
+        "tax": 1150,
+        "total": 30650
+      },
+      "status": "delivered",
+      "createdAt": "2025-12-17T14:19:14.557Z"
+    },
+    {
+      "id": "70893d7f-8862-499a-9b8c-0d60bad1adc2",
+      "buyer": {
+        "name": "Paul Bernard",
+        "email": "paul.bernard@example.cm",
+        "phone": "+237 6 24551000",
+        "address": "123 Maroua"
+      },
+      "region": "Maroua",
+      "shippingFee": 9000,
+      "items": [
+        {
+          "id": "11",
+          "name": "Webcam HD",
+          "price": 16000,
+          "quantity": 3,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?w=500"
+        },
+        {
+          "id": "8",
+          "name": "Wireless Earbuds",
+          "price": 22000,
+          "quantity": 3,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 114000,
+        "tax": 5700,
+        "total": 128700
+      },
+      "status": "shipped",
+      "createdAt": "2025-12-12T23:19:14.557Z"
+    },
+    {
+      "id": "6cd048c1-59b3-4137-b210-e4a2ef690a40",
+      "buyer": {
+        "name": "André Richard",
+        "email": "andré.richard@example.cm",
+        "phone": "+237 6 55611000",
+        "address": "123 Douala"
+      },
+      "region": "Douala",
+      "shippingFee": 0,
+      "items": [
+        {
+          "id": "5",
+          "name": "Wireless Mouse",
+          "price": 4500,
+          "quantity": 3,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=500"
+        },
+        {
+          "id": "1",
+          "name": "Wireless Headphones",
+          "price": 15000,
+          "quantity": 1,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 28500,
+        "tax": 1425,
+        "total": 29925
+      },
+      "status": "delivered",
+      "createdAt": "2025-12-09T21:19:14.557Z"
+    },
+    {
+      "id": "a5894714-9ae9-433b-904f-ce43a9d0147d",
+      "buyer": {
+        "name": "Jean Dupont",
+        "email": "jean.dupont@example.cm",
+        "phone": "+237 6 79771000",
+        "address": "123 Garoua"
+      },
+      "region": "Garoua",
+      "shippingFee": 8000,
+      "items": [
+        {
+          "id": "7",
+          "name": "Mechanical Keyboard",
+          "price": 18000,
+          "quantity": 3,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1595225476474-87563907a212?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 54000,
+        "tax": 2700,
+        "total": 64700
+      },
+      "status": "shipped",
+      "createdAt": "2025-12-28T16:19:14.557Z"
+    },
+    {
+      "id": "83229f0e-9436-4333-8c69-70c82c7ea7d2",
+      "buyer": {
+        "name": "Claude Leclerc",
+        "email": "claude.leclerc@example.cm",
+        "phone": "+237 6 28221000",
+        "address": "123 Ngaoundéré"
+      },
+      "region": "Ngaoundéré",
+      "shippingFee": 7000,
+      "items": [
+        {
+          "id": "12",
+          "name": "Gaming Mouse Pad",
+          "price": 5000,
+          "quantity": 3,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?w=500"
+        },
+        {
+          "id": "11",
+          "name": "Webcam HD",
+          "price": 16000,
+          "quantity": 1,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?w=500"
         },
         {
           "id": "3",
           "name": "Laptop Backpack",
           "price": 8000,
           "quantity": 1,
-          "selectedVariant": "default",
-          "selectedImageUrl": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=500",
-          "image": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=500"
+          "selectedImageUrl": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=500"
         }
       ],
-      "status": "cancelled",
-      "notes": "",
-      "createdAt": "2025-12-27T01:35:33.302Z",
+      "totals": {
+        "subtotal": 39000,
+        "tax": 1950,
+        "total": 47950
+      },
+      "status": "processing",
+      "createdAt": "2025-12-15T03:19:14.557Z"
+    },
+    {
+      "id": "419f808d-8bf1-492b-8003-9735bfe5c000",
+      "buyer": {
+        "name": "Claude Leclerc",
+        "email": "claude.leclerc@example.cm",
+        "phone": "+237 6 43091000",
+        "address": "123 Bafoussam"
+      },
+      "region": "Bafoussam",
+      "shippingFee": 5000,
+      "items": [
+        {
+          "id": "8",
+          "name": "Wireless Earbuds",
+          "price": 22000,
+          "quantity": 2,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=500"
+        },
+        {
+          "id": "6",
+          "name": "USB-C Hub",
+          "price": 6000,
+          "quantity": 3,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1625948515291-69613efd103f?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 62000,
+        "tax": 3100,
+        "total": 70100
+      },
+      "status": "pending",
+      "createdAt": "2025-12-26T00:19:14.557Z"
+    },
+    {
+      "id": "1f30316b-6d46-453c-a17f-9c283f64d1b0",
+      "buyer": {
+        "name": "François Moreau",
+        "email": "françois.moreau@example.cm",
+        "phone": "+237 6 3311000",
+        "address": "123 Bafoussam"
+      },
+      "region": "Bafoussam",
+      "shippingFee": 5000,
+      "items": [
+        {
+          "id": "8",
+          "name": "Wireless Earbuds",
+          "price": 22000,
+          "quantity": 3,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 66000,
+        "tax": 3300,
+        "total": 74300
+      },
+      "status": "pending",
+      "createdAt": "2025-12-13T14:19:14.557Z"
+    },
+    {
+      "id": "50b51a4f-1bab-4ec6-a9e1-26b35eef3952",
+      "buyer": {
+        "name": "André Richard",
+        "email": "andré.richard@example.cm",
+        "phone": "+237 6 25111000",
+        "address": "123 Douala"
+      },
+      "region": "Douala",
+      "shippingFee": 0,
+      "items": [
+        {
+          "id": "5",
+          "name": "Wireless Mouse",
+          "price": 4500,
+          "quantity": 3,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=500"
+        },
+        {
+          "id": "10",
+          "name": "Phone Stand",
+          "price": 3500,
+          "quantity": 1,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1556656793-08538906a9f8?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 17000,
+        "tax": 850,
+        "total": 17850
+      },
+      "status": "delivered",
+      "createdAt": "2025-12-28T21:19:14.557Z"
+    },
+    {
+      "id": "e153e4e0-a2ba-4055-aa37-3c8f44f1fe3c",
+      "buyer": {
+        "name": "Sophie Robert",
+        "email": "sophie.robert@example.cm",
+        "phone": "+237 6 52581000",
+        "address": "123 Buea"
+      },
+      "region": "Buea",
+      "shippingFee": 2000,
+      "items": [
+        {
+          "id": "3",
+          "name": "Laptop Backpack",
+          "price": 8000,
+          "quantity": 2,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=500"
+        },
+        {
+          "id": "8",
+          "name": "Wireless Earbuds",
+          "price": 22000,
+          "quantity": 3,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 82000,
+        "tax": 4100,
+        "total": 88100
+      },
+      "status": "pending",
+      "createdAt": "2025-12-06T21:19:14.557Z"
+    },
+    {
+      "id": "6e3da211-8fc3-493e-a8a1-0354c40c4f8a",
+      "buyer": {
+        "name": "Jean Dupont",
+        "email": "jean.dupont@example.cm",
+        "phone": "+237 6 15821000",
+        "address": "123 Bamenda"
+      },
+      "region": "Bamenda",
+      "shippingFee": 6000,
+      "items": [
+        {
+          "id": "15",
+          "name": "Desk Lamp LED",
+          "price": 8500,
+          "quantity": 2,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?w=500"
+        },
+        {
+          "id": "2",
+          "name": "Smart Watch",
+          "price": 25000,
+          "quantity": 1,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 42000,
+        "tax": 2100,
+        "total": 50100
+      },
+      "status": "shipped",
+      "createdAt": "2025-12-25T20:19:14.557Z"
+    },
+    {
+      "id": "55136098-9ad5-4030-a0bf-9fb2c00569bd",
+      "buyer": {
+        "name": "Paul Bernard",
+        "email": "paul.bernard@example.cm",
+        "phone": "+237 6 2301000",
+        "address": "123 Bafoussam"
+      },
+      "region": "Bafoussam",
+      "shippingFee": 5000,
+      "items": [
+        {
+          "id": "3",
+          "name": "Laptop Backpack",
+          "price": 8000,
+          "quantity": 2,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=500"
+        },
+        {
+          "id": "12",
+          "name": "Gaming Mouse Pad",
+          "price": 5000,
+          "quantity": 1,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 21000,
+        "tax": 1050,
+        "total": 27050
+      },
+      "status": "shipped",
+      "createdAt": "2025-12-14T09:19:14.557Z"
+    },
+    {
+      "id": "cc80ffea-680a-4bd1-b497-92a08e79cf33",
+      "buyer": {
+        "name": "Pierre Thomas",
+        "email": "pierre.thomas@example.cm",
+        "phone": "+237 6 5621000",
+        "address": "123 Ngaoundéré"
+      },
+      "region": "Ngaoundéré",
+      "shippingFee": 7000,
+      "items": [
+        {
+          "id": "15",
+          "name": "Desk Lamp LED",
+          "price": 8500,
+          "quantity": 3,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?w=500"
+        },
+        {
+          "id": "2",
+          "name": "Smart Watch",
+          "price": 25000,
+          "quantity": 2,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 75500,
+        "tax": 3775,
+        "total": 86275
+      },
+      "status": "pending",
+      "createdAt": "2025-12-06T19:19:14.557Z"
+    },
+    {
+      "id": "dacaacd8-4d18-4c10-a72d-a77c7042ef07",
+      "buyer": {
+        "name": "Claude Leclerc",
+        "email": "claude.leclerc@example.cm",
+        "phone": "+237 6 32641000",
+        "address": "123 Garoua"
+      },
+      "region": "Garoua",
+      "shippingFee": 8000,
+      "items": [
+        {
+          "id": "11",
+          "name": "Webcam HD",
+          "price": 16000,
+          "quantity": 1,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?w=500"
+        },
+        {
+          "id": "6",
+          "name": "USB-C Hub",
+          "price": 6000,
+          "quantity": 2,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1625948515291-69613efd103f?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 28000,
+        "tax": 1400,
+        "total": 37400
+      },
+      "status": "processing",
+      "createdAt": "2025-12-01T09:19:14.557Z"
+    },
+    {
+      "id": "3e0f3b82-a002-43c1-8738-8a30ad9b7abf",
+      "buyer": {
+        "name": "Luc Laurent",
+        "email": "luc.laurent@example.cm",
+        "phone": "+237 6 10661000",
+        "address": "123 Douala"
+      },
+      "region": "Douala",
+      "shippingFee": 0,
+      "items": [
+        {
+          "id": "4",
+          "name": "Bluetooth Speaker",
+          "price": 12000,
+          "quantity": 3,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=500"
+        },
+        {
+          "id": "4",
+          "name": "Bluetooth Speaker",
+          "price": 12000,
+          "quantity": 2,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 60000,
+        "tax": 3000,
+        "total": 63000
+      },
+      "status": "processing",
+      "createdAt": "2025-12-05T03:19:14.557Z"
+    },
+    {
+      "id": "b84b507a-1d57-4ceb-b91c-8abbeeeb93a1",
+      "buyer": {
+        "name": "Paul Bernard",
+        "email": "paul.bernard@example.cm",
+        "phone": "+237 6 57861000",
+        "address": "123 Limbe"
+      },
+      "region": "Limbe",
+      "shippingFee": 2500,
+      "items": [
+        {
+          "id": "1",
+          "name": "Wireless Headphones",
+          "price": 15000,
+          "quantity": 1,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500"
+        },
+        {
+          "id": "11",
+          "name": "Webcam HD",
+          "price": 16000,
+          "quantity": 2,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 47000,
+        "tax": 2350,
+        "total": 51850
+      },
+      "status": "delivered",
+      "createdAt": "2025-12-06T02:19:14.557Z"
+    },
+    {
+      "id": "8968d0d9-daac-43ce-86b1-fb0fec052c22",
+      "buyer": {
+        "name": "Jean Dupont",
+        "email": "jean.dupont@example.cm",
+        "phone": "+237 6 6851000",
+        "address": "123 Bertoua"
+      },
+      "region": "Bertoua",
+      "shippingFee": 6500,
+      "items": [
+        {
+          "id": "11",
+          "name": "Webcam HD",
+          "price": 16000,
+          "quantity": 1,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 16000,
+        "tax": 800,
+        "total": 23300
+      },
+      "status": "processing",
+      "createdAt": "2025-12-01T02:19:14.557Z"
+    },
+    {
+      "id": "adf7bdaf-f5d8-4596-857d-885531470f73",
+      "buyer": {
+        "name": "Marie Martin",
+        "email": "marie.martin@example.cm",
+        "phone": "+237 6 10561000",
+        "address": "123 Ngaoundéré"
+      },
+      "region": "Ngaoundéré",
+      "shippingFee": 7000,
+      "items": [
+        {
+          "id": "11",
+          "name": "Webcam HD",
+          "price": 16000,
+          "quantity": 2,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 32000,
+        "tax": 1600,
+        "total": 40600
+      },
+      "status": "delivered",
+      "createdAt": "2025-12-04T15:19:14.557Z"
+    },
+    {
+      "id": "55a0d81a-04ef-40a9-a82e-28a4c26c9f0f",
+      "buyer": {
+        "name": "Paul Bernard",
+        "email": "paul.bernard@example.cm",
+        "phone": "+237 6 19291000",
+        "address": "123 Douala"
+      },
+      "region": "Douala",
+      "shippingFee": 0,
+      "items": [
+        {
+          "id": "5",
+          "name": "Wireless Mouse",
+          "price": 4500,
+          "quantity": 2,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=500"
+        },
+        {
+          "id": "10",
+          "name": "Phone Stand",
+          "price": 3500,
+          "quantity": 2,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1556656793-08538906a9f8?w=500"
+        },
+        {
+          "id": "8",
+          "name": "Wireless Earbuds",
+          "price": 22000,
+          "quantity": 2,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 60000,
+        "tax": 3000,
+        "total": 63000
+      },
+      "status": "pending",
+      "createdAt": "2025-12-11T09:19:14.557Z"
+    },
+    {
+      "id": "6a5e8a1c-eb43-4df1-b36d-46b2132ac005",
+      "buyer": {
+        "name": "Luc Laurent",
+        "email": "luc.laurent@example.cm",
+        "phone": "+237 6 83241000",
+        "address": "123 Douala"
+      },
+      "region": "Douala",
+      "shippingFee": 0,
+      "items": [
+        {
+          "id": "3",
+          "name": "Laptop Backpack",
+          "price": 8000,
+          "quantity": 1,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=500"
+        },
+        {
+          "id": "6",
+          "name": "USB-C Hub",
+          "price": 6000,
+          "quantity": 1,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1625948515291-69613efd103f?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 14000,
+        "tax": 700,
+        "total": 14700
+      },
+      "status": "delivered",
+      "createdAt": "2025-12-21T08:19:14.557Z"
+    },
+    {
+      "id": "85431d9d-1949-4c7e-a8f7-3e6b623074d8",
+      "buyer": {
+        "name": "André Richard",
+        "email": "andré.richard@example.cm",
+        "phone": "+237 6 80951000",
+        "address": "123 Ngaoundéré"
+      },
+      "region": "Ngaoundéré",
+      "shippingFee": 7000,
+      "items": [
+        {
+          "id": "10",
+          "name": "Phone Stand",
+          "price": 3500,
+          "quantity": 1,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1556656793-08538906a9f8?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 3500,
+        "tax": 175,
+        "total": 10675
+      },
+      "status": "pending",
+      "createdAt": "2025-12-03T10:19:14.557Z"
+    },
+    {
+      "id": "be35e55d-5640-4006-930e-fe1561921931",
+      "buyer": {
+        "name": "Anne Simon",
+        "email": "anne.simon@example.cm",
+        "phone": "+237 6 39851000",
+        "address": "123 Garoua"
+      },
+      "region": "Garoua",
+      "shippingFee": 8000,
+      "items": [
+        {
+          "id": "6",
+          "name": "USB-C Hub",
+          "price": 6000,
+          "quantity": 3,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1625948515291-69613efd103f?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 18000,
+        "tax": 900,
+        "total": 26900
+      },
+      "status": "processing",
+      "createdAt": "2025-12-10T05:19:14.557Z"
+    },
+    {
+      "id": "241f59d1-f5c1-4a46-8f55-b7385456a2b5",
+      "buyer": {
+        "name": "Anne Simon",
+        "email": "anne.simon@example.cm",
+        "phone": "+237 6 7891000",
+        "address": "123 Yaoundé"
+      },
+      "region": "Yaoundé",
+      "shippingFee": 3000,
+      "items": [
+        {
+          "id": "14",
+          "name": "Laptop Stand",
+          "price": 9500,
+          "quantity": 1,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1625225233840-695456021cde?w=500"
+        },
+        {
+          "id": "7",
+          "name": "Mechanical Keyboard",
+          "price": 18000,
+          "quantity": 2,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1595225476474-87563907a212?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 45500,
+        "tax": 2275,
+        "total": 50775
+      },
+      "status": "processing",
+      "createdAt": "2025-12-13T17:19:14.557Z"
+    },
+    {
+      "id": "673c12df-9b05-43a8-9a42-8dcb4a259e27",
+      "buyer": {
+        "name": "André Richard",
+        "email": "andré.richard@example.cm",
+        "phone": "+237 6 34731000",
+        "address": "123 Maroua"
+      },
+      "region": "Maroua",
+      "shippingFee": 9000,
+      "items": [
+        {
+          "id": "2",
+          "name": "Smart Watch",
+          "price": 25000,
+          "quantity": 1,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 25000,
+        "tax": 1250,
+        "total": 35250
+      },
+      "status": "shipped",
+      "createdAt": "2025-12-24T02:19:14.557Z"
+    },
+    {
+      "id": "a0a8aeb8-5c42-414c-a332-289c4adaa335",
+      "buyer": {
+        "name": "Anne Simon",
+        "email": "anne.simon@example.cm",
+        "phone": "+237 6 55491000",
+        "address": "123 Ngaoundéré"
+      },
+      "region": "Ngaoundéré",
+      "shippingFee": 7000,
+      "items": [
+        {
+          "id": "8",
+          "name": "Wireless Earbuds",
+          "price": 22000,
+          "quantity": 3,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=500"
+        },
+        {
+          "id": "15",
+          "name": "Desk Lamp LED",
+          "price": 8500,
+          "quantity": 3,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 91500,
+        "tax": 4575,
+        "total": 103075
+      },
+      "status": "delivered",
+      "createdAt": "2025-12-06T16:19:14.557Z"
+    },
+    {
+      "id": "a571a5fb-a947-45b5-93ce-26d03d2ebcaa",
+      "buyer": {
+        "name": "Sophie Robert",
+        "email": "sophie.robert@example.cm",
+        "phone": "+237 6 42991000",
+        "address": "123 Douala"
+      },
+      "region": "Douala",
+      "shippingFee": 0,
+      "items": [
+        {
+          "id": "8",
+          "name": "Wireless Earbuds",
+          "price": 22000,
+          "quantity": 1,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=500"
+        },
+        {
+          "id": "10",
+          "name": "Phone Stand",
+          "price": 3500,
+          "quantity": 1,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1556656793-08538906a9f8?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 25500,
+        "tax": 1275,
+        "total": 26775
+      },
+      "status": "processing",
+      "createdAt": "2025-12-01T15:19:14.557Z"
+    },
+    {
+      "id": "cbd0ff54-af79-469b-a6c1-cf64e29e2d55",
+      "buyer": {
+        "name": "Marie Martin",
+        "email": "marie.martin@example.cm",
+        "phone": "+237 6 65591000",
+        "address": "123 Garoua"
+      },
+      "region": "Garoua",
+      "shippingFee": 8000,
+      "items": [
+        {
+          "id": "8",
+          "name": "Wireless Earbuds",
+          "price": 22000,
+          "quantity": 3,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 66000,
+        "tax": 3300,
+        "total": 77300
+      },
+      "status": "pending",
+      "createdAt": "2025-12-21T21:19:14.557Z"
+    },
+    {
+      "id": "3807b457-0c05-4728-a152-cffaad950075",
+      "buyer": {
+        "name": "André Richard",
+        "email": "andré.richard@example.cm",
+        "phone": "+237 6 47691000",
+        "address": "123 Bafoussam"
+      },
+      "region": "Bafoussam",
+      "shippingFee": 5000,
+      "items": [
+        {
+          "id": "4",
+          "name": "Bluetooth Speaker",
+          "price": 12000,
+          "quantity": 3,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=500"
+        },
+        {
+          "id": "3",
+          "name": "Laptop Backpack",
+          "price": 8000,
+          "quantity": 2,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=500"
+        },
+        {
+          "id": "13",
+          "name": "USB Flash Drive",
+          "price": 4000,
+          "quantity": 3,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1624823183493-ed5832f48f18?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 64000,
+        "tax": 3200,
+        "total": 72200
+      },
+      "status": "shipped",
+      "createdAt": "2025-12-22T04:19:14.557Z"
+    },
+    {
+      "id": "4851155b-5f49-41a8-b393-ca958b868bf5",
+      "buyer": {
+        "name": "Paul Bernard",
+        "email": "paul.bernard@example.cm",
+        "phone": "+237 6 18401000",
+        "address": "123 Yaoundé"
+      },
+      "region": "Yaoundé",
+      "shippingFee": 3000,
+      "items": [
+        {
+          "id": "4",
+          "name": "Bluetooth Speaker",
+          "price": 12000,
+          "quantity": 1,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 12000,
+        "tax": 600,
+        "total": 15600
+      },
+      "status": "shipped",
+      "createdAt": "2025-12-11T21:19:14.557Z"
+    },
+    {
+      "id": "109b15bf-afb7-4ccd-9b10-6d61dd35af66",
+      "buyer": {
+        "name": "André Richard",
+        "email": "andré.richard@example.cm",
+        "phone": "+237 6 40321000",
+        "address": "123 Bertoua"
+      },
+      "region": "Bertoua",
+      "shippingFee": 6500,
+      "items": [
+        {
+          "id": "3",
+          "name": "Laptop Backpack",
+          "price": 8000,
+          "quantity": 3,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 24000,
+        "tax": 1200,
+        "total": 31700
+      },
+      "status": "shipped",
+      "createdAt": "2025-12-28T02:19:14.557Z"
+    },
+    {
+      "id": "dce2a086-19e5-4f2a-8df6-c5d99e69bf50",
+      "buyer": {
+        "name": "Pierre Thomas",
+        "email": "pierre.thomas@example.cm",
+        "phone": "+237 6 45511000",
+        "address": "123 Douala"
+      },
+      "region": "Douala",
+      "shippingFee": 0,
+      "items": [
+        {
+          "id": "7",
+          "name": "Mechanical Keyboard",
+          "price": 18000,
+          "quantity": 1,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1595225476474-87563907a212?w=500"
+        },
+        {
+          "id": "5",
+          "name": "Wireless Mouse",
+          "price": 4500,
+          "quantity": 1,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=500"
+        },
+        {
+          "id": "6",
+          "name": "USB-C Hub",
+          "price": 6000,
+          "quantity": 3,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1625948515291-69613efd103f?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 40500,
+        "tax": 2025,
+        "total": 42525
+      },
+      "status": "shipped",
+      "createdAt": "2025-12-06T14:19:14.557Z"
+    },
+    {
+      "id": "88415225-29d6-4e50-bc2d-b131bc4bc6f7",
+      "buyer": {
+        "name": "Sophie Robert",
+        "email": "sophie.robert@example.cm",
+        "phone": "+237 6 3561000",
+        "address": "123 Douala"
+      },
+      "region": "Douala",
+      "shippingFee": 0,
+      "items": [
+        {
+          "id": "13",
+          "name": "USB Flash Drive",
+          "price": 4000,
+          "quantity": 1,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1624823183493-ed5832f48f18?w=500"
+        },
+        {
+          "id": "11",
+          "name": "Webcam HD",
+          "price": 16000,
+          "quantity": 3,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?w=500"
+        },
+        {
+          "id": "12",
+          "name": "Gaming Mouse Pad",
+          "price": 5000,
+          "quantity": 1,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 57000,
+        "tax": 2850,
+        "total": 59850
+      },
+      "status": "processing",
+      "createdAt": "2025-12-23T10:19:14.557Z"
+    },
+    {
+      "id": "13669fd7-c9cd-40e6-bb6d-469815f77a25",
+      "buyer": {
+        "name": "Anne Simon",
+        "email": "anne.simon@example.cm",
+        "phone": "+237 6 52801000",
+        "address": "123 Bafoussam"
+      },
+      "region": "Bafoussam",
+      "shippingFee": 5000,
+      "items": [
+        {
+          "id": "15",
+          "name": "Desk Lamp LED",
+          "price": 8500,
+          "quantity": 1,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?w=500"
+        },
+        {
+          "id": "6",
+          "name": "USB-C Hub",
+          "price": 6000,
+          "quantity": 1,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1625948515291-69613efd103f?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 14500,
+        "tax": 725,
+        "total": 20225
+      },
+      "status": "pending",
+      "createdAt": "2025-11-29T17:19:14.557Z"
+    },
+    {
+      "id": "450348e4-4834-4313-81df-1d6329f61fd7",
+      "buyer": {
+        "name": "Marie Martin",
+        "email": "marie.martin@example.cm",
+        "phone": "+237 6 72131000",
+        "address": "123 Bamenda"
+      },
+      "region": "Bamenda",
+      "shippingFee": 6000,
+      "items": [
+        {
+          "id": "14",
+          "name": "Laptop Stand",
+          "price": 9500,
+          "quantity": 3,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1625225233840-695456021cde?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 28500,
+        "tax": 1425,
+        "total": 35925
+      },
+      "status": "delivered",
+      "createdAt": "2025-12-13T03:19:14.557Z"
+    },
+    {
+      "id": "c467ba3d-bfdc-4e5d-b92d-c3ab955fbb7f",
+      "buyer": {
+        "name": "Jean Dupont",
+        "email": "jean.dupont@example.cm",
+        "phone": "+237 6 56721000",
+        "address": "123 Bamenda"
+      },
+      "region": "Bamenda",
+      "shippingFee": 6000,
+      "items": [
+        {
+          "id": "12",
+          "name": "Gaming Mouse Pad",
+          "price": 5000,
+          "quantity": 1,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?w=500"
+        },
+        {
+          "id": "2",
+          "name": "Smart Watch",
+          "price": 25000,
+          "quantity": 3,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 80000,
+        "tax": 4000,
+        "total": 90000
+      },
+      "status": "processing",
+      "createdAt": "2025-12-17T16:19:14.557Z"
+    },
+    {
+      "id": "2f6e8cdf-d6cc-4ac1-8de1-fa6ef37a789d",
+      "buyer": {
+        "name": "Pierre Thomas",
+        "email": "pierre.thomas@example.cm",
+        "phone": "+237 6 16971000",
+        "address": "123 Garoua"
+      },
+      "region": "Garoua",
+      "shippingFee": 8000,
+      "items": [
+        {
+          "id": "6",
+          "name": "USB-C Hub",
+          "price": 6000,
+          "quantity": 2,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1625948515291-69613efd103f?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 12000,
+        "tax": 600,
+        "total": 20600
+      },
+      "status": "shipped",
+      "createdAt": "2025-12-01T23:19:14.557Z"
+    },
+    {
+      "id": "027b81c7-7085-4038-9a04-166c6100fd80",
+      "buyer": {
+        "name": "André Richard",
+        "email": "andré.richard@example.cm",
+        "phone": "+237 6 58991000",
+        "address": "123 Bertoua"
+      },
+      "region": "Bertoua",
+      "shippingFee": 6500,
+      "items": [
+        {
+          "id": "11",
+          "name": "Webcam HD",
+          "price": 16000,
+          "quantity": 2,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?w=500"
+        },
+        {
+          "id": "8",
+          "name": "Wireless Earbuds",
+          "price": 22000,
+          "quantity": 1,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 54000,
+        "tax": 2700,
+        "total": 63200
+      },
+      "status": "processing",
+      "createdAt": "2025-12-01T00:19:14.557Z"
+    },
+    {
+      "id": "6745aff7-a7eb-4c40-bc42-049bcc794f8e",
+      "buyer": {
+        "name": "Marie Martin",
+        "email": "marie.martin@example.cm",
+        "phone": "+237 6 26541000",
+        "address": "123 Limbe"
+      },
+      "region": "Limbe",
+      "shippingFee": 2500,
+      "items": [
+        {
+          "id": "3",
+          "name": "Laptop Backpack",
+          "price": 8000,
+          "quantity": 3,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 24000,
+        "tax": 1200,
+        "total": 27700
+      },
+      "status": "shipped",
+      "createdAt": "2025-11-30T09:19:14.557Z"
+    },
+    {
+      "id": "b6b945fa-9853-4429-bd04-aa232fb7ab0e",
+      "buyer": {
+        "name": "François Moreau",
+        "email": "françois.moreau@example.cm",
+        "phone": "+237 6 33761000",
+        "address": "123 Bafoussam"
+      },
+      "region": "Bafoussam",
+      "shippingFee": 5000,
+      "items": [
+        {
+          "id": "10",
+          "name": "Phone Stand",
+          "price": 3500,
+          "quantity": 2,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1556656793-08538906a9f8?w=500"
+        },
+        {
+          "id": "1",
+          "name": "Wireless Headphones",
+          "price": 15000,
+          "quantity": 2,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 37000,
+        "tax": 1850,
+        "total": 43850
+      },
+      "status": "shipped",
+      "createdAt": "2025-12-27T16:19:14.557Z"
+    },
+    {
+      "id": "ad5fab91-ddd8-421c-8155-dc1a4026f002",
+      "buyer": {
+        "name": "Jean Dupont",
+        "email": "jean.dupont@example.cm",
+        "phone": "+237 6 23081000",
+        "address": "123 Buea"
+      },
+      "region": "Buea",
+      "shippingFee": 2000,
+      "items": [
+        {
+          "id": "13",
+          "name": "USB Flash Drive",
+          "price": 4000,
+          "quantity": 2,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1624823183493-ed5832f48f18?w=500"
+        },
+        {
+          "id": "8",
+          "name": "Wireless Earbuds",
+          "price": 22000,
+          "quantity": 3,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 74000,
+        "tax": 3700,
+        "total": 79700
+      },
+      "status": "pending",
+      "createdAt": "2025-12-10T04:19:14.557Z"
+    },
+    {
+      "id": "5e297e77-8cad-42df-8943-45eb153e5b7d",
+      "buyer": {
+        "name": "Marie Martin",
+        "email": "marie.martin@example.cm",
+        "phone": "+237 6 76581000",
+        "address": "123 Buea"
+      },
+      "region": "Buea",
+      "shippingFee": 2000,
+      "items": [
+        {
+          "id": "2",
+          "name": "Smart Watch",
+          "price": 25000,
+          "quantity": 2,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500"
+        },
+        {
+          "id": "6",
+          "name": "USB-C Hub",
+          "price": 6000,
+          "quantity": 3,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1625948515291-69613efd103f?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 68000,
+        "tax": 3400,
+        "total": 73400
+      },
+      "status": "processing",
+      "createdAt": "2025-12-03T20:19:14.557Z"
+    },
+    {
+      "id": "fc149ec6-4cf3-45bc-abf1-2874e2ec65a4",
+      "buyer": {
+        "name": "François Moreau",
+        "email": "françois.moreau@example.cm",
+        "phone": "+237 6 21821000",
+        "address": "123 Douala"
+      },
+      "region": "Douala",
+      "shippingFee": 0,
+      "items": [
+        {
+          "id": "2",
+          "name": "Smart Watch",
+          "price": 25000,
+          "quantity": 1,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500"
+        },
+        {
+          "id": "1",
+          "name": "Wireless Headphones",
+          "price": 15000,
+          "quantity": 2,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500"
+        },
+        {
+          "id": "4",
+          "name": "Bluetooth Speaker",
+          "price": 12000,
+          "quantity": 3,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 91000,
+        "tax": 4550,
+        "total": 95550
+      },
+      "status": "pending",
+      "createdAt": "2025-12-19T02:19:14.557Z"
+    },
+    {
+      "id": "866cc824-43cc-4376-a6e6-15c8f2686cdc",
+      "buyer": {
+        "name": "François Moreau",
+        "email": "françois.moreau@example.cm",
+        "phone": "+237 6 77221000",
+        "address": "123 Maroua"
+      },
+      "region": "Maroua",
+      "shippingFee": 9000,
+      "items": [
+        {
+          "id": "8",
+          "name": "Wireless Earbuds",
+          "price": 22000,
+          "quantity": 2,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=500"
+        },
+        {
+          "id": "2",
+          "name": "Smart Watch",
+          "price": 25000,
+          "quantity": 2,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 94000,
+        "tax": 4700,
+        "total": 107700
+      },
+      "status": "delivered",
+      "createdAt": "2025-12-01T14:19:14.557Z"
+    },
+    {
+      "id": "e872283c-acf4-4e14-b48f-1c1bc8233e3a",
+      "buyer": {
+        "name": "Sophie Robert",
+        "email": "sophie.robert@example.cm",
+        "phone": "+237 6 68171000",
+        "address": "123 Bamenda"
+      },
+      "region": "Bamenda",
+      "shippingFee": 6000,
+      "items": [
+        {
+          "id": "8",
+          "name": "Wireless Earbuds",
+          "price": 22000,
+          "quantity": 2,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 44000,
+        "tax": 2200,
+        "total": 52200
+      },
+      "status": "pending",
+      "createdAt": "2025-12-19T06:19:14.557Z"
+    },
+    {
+      "id": "1184fc64-5b5d-4601-b73f-239d862f4157",
+      "buyer": {
+        "name": "Luc Laurent",
+        "email": "luc.laurent@example.cm",
+        "phone": "+237 6 40721000",
+        "address": "123 Garoua"
+      },
+      "region": "Garoua",
+      "shippingFee": 8000,
+      "items": [
+        {
+          "id": "2",
+          "name": "Smart Watch",
+          "price": 25000,
+          "quantity": 3,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500"
+        },
+        {
+          "id": "15",
+          "name": "Desk Lamp LED",
+          "price": 8500,
+          "quantity": 3,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 100500,
+        "tax": 5025,
+        "total": 113525
+      },
+      "status": "pending",
+      "createdAt": "2025-12-09T13:19:14.557Z"
+    },
+    {
+      "id": "85b3898e-3b72-4074-beb2-240e4de1f345",
+      "buyer": {
+        "name": "Anne Simon",
+        "email": "anne.simon@example.cm",
+        "phone": "+237 6 2011000",
+        "address": "123 Yaoundé"
+      },
+      "region": "Yaoundé",
+      "shippingFee": 3000,
+      "items": [
+        {
+          "id": "1",
+          "name": "Wireless Headphones",
+          "price": 15000,
+          "quantity": 3,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500"
+        },
+        {
+          "id": "12",
+          "name": "Gaming Mouse Pad",
+          "price": 5000,
+          "quantity": 2,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 55000,
+        "tax": 2750,
+        "total": 60750
+      },
+      "status": "delivered",
+      "createdAt": "2025-12-26T16:19:14.557Z"
+    },
+    {
+      "id": "0d81cf09-72e0-42b2-9454-031320279fae",
+      "buyer": {
+        "name": "Jean Dupont",
+        "email": "jean.dupont@example.cm",
+        "phone": "+237 6 41031000",
+        "address": "123 Limbe"
+      },
+      "region": "Limbe",
+      "shippingFee": 2500,
+      "items": [
+        {
+          "id": "4",
+          "name": "Bluetooth Speaker",
+          "price": 12000,
+          "quantity": 2,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 24000,
+        "tax": 1200,
+        "total": 27700
+      },
+      "status": "shipped",
+      "createdAt": "2025-12-12T22:19:14.557Z"
+    },
+    {
+      "id": "9555d950-4851-4fdd-aa25-3ec189160819",
+      "buyer": {
+        "name": "Paul Bernard",
+        "email": "paul.bernard@example.cm",
+        "phone": "+237 6 3591000",
+        "address": "123 Bertoua"
+      },
+      "region": "Bertoua",
+      "shippingFee": 6500,
+      "items": [
+        {
+          "id": "12",
+          "name": "Gaming Mouse Pad",
+          "price": 5000,
+          "quantity": 3,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 15000,
+        "tax": 750,
+        "total": 22250
+      },
+      "status": "delivered",
+      "createdAt": "2025-12-24T16:19:14.557Z"
+    },
+    {
+      "id": "da9637de-cf70-4628-aea3-16edc3c2f4c3",
+      "buyer": {
+        "name": "Sophie Robert",
+        "email": "sophie.robert@example.cm",
+        "phone": "+237 6 5361000",
+        "address": "123 Buea"
+      },
+      "region": "Buea",
+      "shippingFee": 2000,
+      "items": [
+        {
+          "id": "2",
+          "name": "Smart Watch",
+          "price": 25000,
+          "quantity": 2,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500"
+        },
+        {
+          "id": "15",
+          "name": "Desk Lamp LED",
+          "price": 8500,
+          "quantity": 1,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 58500,
+        "tax": 2925,
+        "total": 63425
+      },
+      "status": "shipped",
+      "createdAt": "2025-12-27T14:19:14.557Z",
       "deliveryAgency": ""
+    },
+    {
+      "id": "4591c9da-02c8-4e93-82c3-90b8825c8ae5",
+      "buyer": {
+        "name": "Marie Martin",
+        "email": "marie.martin@example.cm",
+        "phone": "+237 6 4151000",
+        "address": "123 Garoua"
+      },
+      "region": "Garoua",
+      "shippingFee": 8000,
+      "items": [
+        {
+          "id": "13",
+          "name": "USB Flash Drive",
+          "price": 4000,
+          "quantity": 1,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1624823183493-ed5832f48f18?w=500"
+        },
+        {
+          "id": "15",
+          "name": "Desk Lamp LED",
+          "price": 8500,
+          "quantity": 1,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?w=500"
+        },
+        {
+          "id": "13",
+          "name": "USB Flash Drive",
+          "price": 4000,
+          "quantity": 3,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1624823183493-ed5832f48f18?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 24500,
+        "tax": 1225,
+        "total": 33725
+      },
+      "status": "shipped",
+      "createdAt": "2025-12-09T08:19:14.557Z"
+    },
+    {
+      "id": "5c692089-86b1-4f84-8bba-873867d0ebf2",
+      "buyer": {
+        "name": "André Richard",
+        "email": "andré.richard@example.cm",
+        "phone": "+237 6 31071000",
+        "address": "123 Ngaoundéré"
+      },
+      "region": "Ngaoundéré",
+      "shippingFee": 7000,
+      "items": [
+        {
+          "id": "6",
+          "name": "USB-C Hub",
+          "price": 6000,
+          "quantity": 2,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1625948515291-69613efd103f?w=500"
+        },
+        {
+          "id": "7",
+          "name": "Mechanical Keyboard",
+          "price": 18000,
+          "quantity": 1,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1595225476474-87563907a212?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 30000,
+        "tax": 1500,
+        "total": 38500
+      },
+      "status": "pending",
+      "createdAt": "2025-12-16T17:19:14.557Z"
+    },
+    {
+      "id": "ce72159a-0a4d-41e6-9a1a-acf2846419e3",
+      "buyer": {
+        "name": "François Moreau",
+        "email": "françois.moreau@example.cm",
+        "phone": "+237 6 74861000",
+        "address": "123 Bafoussam"
+      },
+      "region": "Bafoussam",
+      "shippingFee": 5000,
+      "items": [
+        {
+          "id": "11",
+          "name": "Webcam HD",
+          "price": 16000,
+          "quantity": 3,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?w=500"
+        },
+        {
+          "id": "2",
+          "name": "Smart Watch",
+          "price": 25000,
+          "quantity": 3,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 123000,
+        "tax": 6150,
+        "total": 134150
+      },
+      "status": "pending",
+      "createdAt": "2025-12-01T02:19:14.557Z"
+    },
+    {
+      "id": "de260227-da53-4653-b933-ec5ea52a7a3a",
+      "buyer": {
+        "name": "Paul Bernard",
+        "email": "paul.bernard@example.cm",
+        "phone": "+237 6 83101000",
+        "address": "123 Douala"
+      },
+      "region": "Douala",
+      "shippingFee": 0,
+      "items": [
+        {
+          "id": "7",
+          "name": "Mechanical Keyboard",
+          "price": 18000,
+          "quantity": 1,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1595225476474-87563907a212?w=500"
+        },
+        {
+          "id": "4",
+          "name": "Bluetooth Speaker",
+          "price": 12000,
+          "quantity": 3,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=500"
+        },
+        {
+          "id": "15",
+          "name": "Desk Lamp LED",
+          "price": 8500,
+          "quantity": 2,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 71000,
+        "tax": 3550,
+        "total": 74550
+      },
+      "status": "shipped",
+      "createdAt": "2025-12-05T03:19:14.557Z"
+    },
+    {
+      "id": "25f3be0f-b71d-47cc-a91a-9c631adcd881",
+      "buyer": {
+        "name": "Luc Laurent",
+        "email": "luc.laurent@example.cm",
+        "phone": "+237 6 58661000",
+        "address": "123 Ngaoundéré"
+      },
+      "region": "Ngaoundéré",
+      "shippingFee": 7000,
+      "items": [
+        {
+          "id": "13",
+          "name": "USB Flash Drive",
+          "price": 4000,
+          "quantity": 3,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1624823183493-ed5832f48f18?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 12000,
+        "tax": 600,
+        "total": 19600
+      },
+      "status": "delivered",
+      "createdAt": "2025-12-12T15:19:14.557Z"
+    },
+    {
+      "id": "6ecd8006-b7f9-4d33-a8ff-b9a082c805f9",
+      "buyer": {
+        "name": "Paul Bernard",
+        "email": "paul.bernard@example.cm",
+        "phone": "+237 6 13131000",
+        "address": "123 Bertoua"
+      },
+      "region": "Bertoua",
+      "shippingFee": 6500,
+      "items": [
+        {
+          "id": "12",
+          "name": "Gaming Mouse Pad",
+          "price": 5000,
+          "quantity": 3,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?w=500"
+        },
+        {
+          "id": "14",
+          "name": "Laptop Stand",
+          "price": 9500,
+          "quantity": 2,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1625225233840-695456021cde?w=500"
+        },
+        {
+          "id": "10",
+          "name": "Phone Stand",
+          "price": 3500,
+          "quantity": 3,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1556656793-08538906a9f8?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 44500,
+        "tax": 2225,
+        "total": 53225
+      },
+      "status": "delivered",
+      "createdAt": "2025-12-24T17:19:14.557Z"
+    },
+    {
+      "id": "e2385b30-6e3f-4f52-bd12-dbdae4cbebee",
+      "buyer": {
+        "name": "Paul Bernard",
+        "email": "paul.bernard@example.cm",
+        "phone": "+237 6 55291000",
+        "address": "123 Maroua"
+      },
+      "region": "Maroua",
+      "shippingFee": 9000,
+      "items": [
+        {
+          "id": "2",
+          "name": "Smart Watch",
+          "price": 25000,
+          "quantity": 1,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500"
+        },
+        {
+          "id": "10",
+          "name": "Phone Stand",
+          "price": 3500,
+          "quantity": 1,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1556656793-08538906a9f8?w=500"
+        },
+        {
+          "id": "8",
+          "name": "Wireless Earbuds",
+          "price": 22000,
+          "quantity": 2,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 72500,
+        "tax": 3625,
+        "total": 85125
+      },
+      "status": "pending",
+      "createdAt": "2025-12-20T03:19:14.557Z"
+    },
+    {
+      "id": "60841fd1-69b0-4c11-8067-35a22521944a",
+      "buyer": {
+        "name": "Pierre Thomas",
+        "email": "pierre.thomas@example.cm",
+        "phone": "+237 6 56941000",
+        "address": "123 Bamenda"
+      },
+      "region": "Bamenda",
+      "shippingFee": 6000,
+      "items": [
+        {
+          "id": "4",
+          "name": "Bluetooth Speaker",
+          "price": 12000,
+          "quantity": 1,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 12000,
+        "tax": 600,
+        "total": 18600
+      },
+      "status": "shipped",
+      "createdAt": "2025-12-24T17:19:14.557Z"
+    },
+    {
+      "id": "31426ab0-4557-485b-9bdb-fd47a345891d",
+      "buyer": {
+        "name": "François Moreau",
+        "email": "françois.moreau@example.cm",
+        "phone": "+237 6 34391000",
+        "address": "123 Garoua"
+      },
+      "region": "Garoua",
+      "shippingFee": 8000,
+      "items": [
+        {
+          "id": "8",
+          "name": "Wireless Earbuds",
+          "price": 22000,
+          "quantity": 2,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 44000,
+        "tax": 2200,
+        "total": 54200
+      },
+      "status": "cancelled",
+      "createdAt": "2025-12-28T12:19:14.557Z"
+    },
+    {
+      "id": "64a684ef-ae9e-47ec-8cee-df6cffd798d9",
+      "buyer": {
+        "name": "Anne Simon",
+        "email": "anne.simon@example.cm",
+        "phone": "+237 6 50061000",
+        "address": "123 Limbe"
+      },
+      "region": "Limbe",
+      "shippingFee": 2500,
+      "items": [
+        {
+          "id": "13",
+          "name": "USB Flash Drive",
+          "price": 4000,
+          "quantity": 3,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1624823183493-ed5832f48f18?w=500"
+        },
+        {
+          "id": "14",
+          "name": "Laptop Stand",
+          "price": 9500,
+          "quantity": 3,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1625225233840-695456021cde?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 40500,
+        "tax": 2025,
+        "total": 45025
+      },
+      "status": "shipped",
+      "createdAt": "2025-12-10T02:19:14.557Z"
+    },
+    {
+      "id": "68fe555b-1e2b-4327-b599-156373daf2b3",
+      "buyer": {
+        "name": "André Richard",
+        "email": "andré.richard@example.cm",
+        "phone": "+237 6 9151000",
+        "address": "123 Maroua"
+      },
+      "region": "Maroua",
+      "shippingFee": 9000,
+      "items": [
+        {
+          "id": "7",
+          "name": "Mechanical Keyboard",
+          "price": 18000,
+          "quantity": 3,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1595225476474-87563907a212?w=500"
+        },
+        {
+          "id": "4",
+          "name": "Bluetooth Speaker",
+          "price": 12000,
+          "quantity": 2,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 78000,
+        "tax": 3900,
+        "total": 90900
+      },
+      "status": "shipped",
+      "createdAt": "2025-12-09T10:19:14.557Z"
+    },
+    {
+      "id": "0776e8e9-0dd7-48de-92c3-a74dca5cdb1e",
+      "buyer": {
+        "name": "Marie Martin",
+        "email": "marie.martin@example.cm",
+        "phone": "+237 6 83141000",
+        "address": "123 Yaoundé"
+      },
+      "region": "Yaoundé",
+      "shippingFee": 3000,
+      "items": [
+        {
+          "id": "10",
+          "name": "Phone Stand",
+          "price": 3500,
+          "quantity": 3,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1556656793-08538906a9f8?w=500"
+        },
+        {
+          "id": "14",
+          "name": "Laptop Stand",
+          "price": 9500,
+          "quantity": 2,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1625225233840-695456021cde?w=500"
+        },
+        {
+          "id": "8",
+          "name": "Wireless Earbuds",
+          "price": 22000,
+          "quantity": 2,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 73500,
+        "tax": 3675,
+        "total": 80175
+      },
+      "status": "delivered",
+      "createdAt": "2025-11-30T14:19:14.557Z"
+    },
+    {
+      "id": "1b460783-9669-4ec5-b511-2caee2f49422",
+      "buyer": {
+        "name": "Anne Simon",
+        "email": "anne.simon@example.cm",
+        "phone": "+237 6 7931000",
+        "address": "123 Bafoussam"
+      },
+      "region": "Bafoussam",
+      "shippingFee": 5000,
+      "items": [
+        {
+          "id": "12",
+          "name": "Gaming Mouse Pad",
+          "price": 5000,
+          "quantity": 1,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 5000,
+        "tax": 250,
+        "total": 10250
+      },
+      "status": "processing",
+      "createdAt": "2025-11-30T00:19:14.557Z"
+    },
+    {
+      "id": "852a6ffc-8d01-48e4-a8b0-6e3f46b91685",
+      "buyer": {
+        "name": "Pierre Thomas",
+        "email": "pierre.thomas@example.cm",
+        "phone": "+237 6 45041000",
+        "address": "123 Yaoundé"
+      },
+      "region": "Yaoundé",
+      "shippingFee": 3000,
+      "items": [
+        {
+          "id": "4",
+          "name": "Bluetooth Speaker",
+          "price": 12000,
+          "quantity": 3,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=500"
+        },
+        {
+          "id": "6",
+          "name": "USB-C Hub",
+          "price": 6000,
+          "quantity": 1,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1625948515291-69613efd103f?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 42000,
+        "tax": 2100,
+        "total": 47100
+      },
+      "status": "shipped",
+      "createdAt": "2025-12-05T01:19:14.557Z"
+    },
+    {
+      "id": "6ada1d6c-e65c-4260-bd12-c850ab7a00dc",
+      "buyer": {
+        "name": "Jean Dupont",
+        "email": "jean.dupont@example.cm",
+        "phone": "+237 6 22851000",
+        "address": "123 Bamenda"
+      },
+      "region": "Bamenda",
+      "shippingFee": 6000,
+      "items": [
+        {
+          "id": "2",
+          "name": "Smart Watch",
+          "price": 25000,
+          "quantity": 3,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500"
+        },
+        {
+          "id": "11",
+          "name": "Webcam HD",
+          "price": 16000,
+          "quantity": 1,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 91000,
+        "tax": 4550,
+        "total": 101550
+      },
+      "status": "pending",
+      "createdAt": "2025-12-09T08:19:14.557Z"
+    },
+    {
+      "id": "d13062cf-6891-4ca6-b2ae-d03d43f5f5d7",
+      "buyer": {
+        "name": "Luc Laurent",
+        "email": "luc.laurent@example.cm",
+        "phone": "+237 6 64471000",
+        "address": "123 Bafoussam"
+      },
+      "region": "Bafoussam",
+      "shippingFee": 5000,
+      "items": [
+        {
+          "id": "6",
+          "name": "USB-C Hub",
+          "price": 6000,
+          "quantity": 3,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1625948515291-69613efd103f?w=500"
+        },
+        {
+          "id": "14",
+          "name": "Laptop Stand",
+          "price": 9500,
+          "quantity": 3,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1625225233840-695456021cde?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 46500,
+        "tax": 2325,
+        "total": 53825
+      },
+      "status": "pending",
+      "createdAt": "2025-11-30T04:19:14.557Z"
+    },
+    {
+      "id": "85c81e70-5b46-43be-b79c-8a36cf53c771",
+      "buyer": {
+        "name": "Jean Dupont",
+        "email": "jean.dupont@example.cm",
+        "phone": "+237 6 58301000",
+        "address": "123 Limbe"
+      },
+      "region": "Limbe",
+      "shippingFee": 2500,
+      "items": [
+        {
+          "id": "1",
+          "name": "Wireless Headphones",
+          "price": 15000,
+          "quantity": 1,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500"
+        },
+        {
+          "id": "8",
+          "name": "Wireless Earbuds",
+          "price": 22000,
+          "quantity": 2,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 59000,
+        "tax": 2950,
+        "total": 64450
+      },
+      "status": "shipped",
+      "createdAt": "2025-12-17T06:19:14.557Z"
+    },
+    {
+      "id": "3ca3b2a3-cabd-4809-9e76-f0d412ab33b4",
+      "buyer": {
+        "name": "François Moreau",
+        "email": "françois.moreau@example.cm",
+        "phone": "+237 6 31801000",
+        "address": "123 Bamenda"
+      },
+      "region": "Bamenda",
+      "shippingFee": 6000,
+      "items": [
+        {
+          "id": "14",
+          "name": "Laptop Stand",
+          "price": 9500,
+          "quantity": 3,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1625225233840-695456021cde?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 28500,
+        "tax": 1425,
+        "total": 35925
+      },
+      "status": "shipped",
+      "createdAt": "2025-12-06T17:19:14.557Z"
+    },
+    {
+      "id": "c01b3bf0-e935-4862-9ccb-57d37c336a25",
+      "buyer": {
+        "name": "Sophie Robert",
+        "email": "sophie.robert@example.cm",
+        "phone": "+237 6 76991000",
+        "address": "123 Yaoundé"
+      },
+      "region": "Yaoundé",
+      "shippingFee": 3000,
+      "items": [
+        {
+          "id": "5",
+          "name": "Wireless Mouse",
+          "price": 4500,
+          "quantity": 2,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 9000,
+        "tax": 450,
+        "total": 12450
+      },
+      "status": "pending",
+      "createdAt": "2025-12-13T02:19:14.557Z"
+    },
+    {
+      "id": "a36c5df8-9e67-478a-815d-84bc08584483",
+      "buyer": {
+        "name": "Marie Martin",
+        "email": "marie.martin@example.cm",
+        "phone": "+237 6 28301000",
+        "address": "123 Buea"
+      },
+      "region": "Buea",
+      "shippingFee": 2000,
+      "items": [
+        {
+          "id": "7",
+          "name": "Mechanical Keyboard",
+          "price": 18000,
+          "quantity": 3,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1595225476474-87563907a212?w=500"
+        },
+        {
+          "id": "7",
+          "name": "Mechanical Keyboard",
+          "price": 18000,
+          "quantity": 1,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1595225476474-87563907a212?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 72000,
+        "tax": 3600,
+        "total": 77600
+      },
+      "status": "processing",
+      "createdAt": "2025-12-04T19:19:14.557Z"
+    },
+    {
+      "id": "de64e5cf-9342-4112-83b9-079be3a04eab",
+      "buyer": {
+        "name": "Luc Laurent",
+        "email": "luc.laurent@example.cm",
+        "phone": "+237 6 69311000",
+        "address": "123 Bertoua"
+      },
+      "region": "Bertoua",
+      "shippingFee": 6500,
+      "items": [
+        {
+          "id": "6",
+          "name": "USB-C Hub",
+          "price": 6000,
+          "quantity": 3,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1625948515291-69613efd103f?w=500"
+        },
+        {
+          "id": "2",
+          "name": "Smart Watch",
+          "price": 25000,
+          "quantity": 1,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500"
+        },
+        {
+          "id": "13",
+          "name": "USB Flash Drive",
+          "price": 4000,
+          "quantity": 1,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1624823183493-ed5832f48f18?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 47000,
+        "tax": 2350,
+        "total": 55850
+      },
+      "status": "processing",
+      "createdAt": "2025-12-14T06:19:14.557Z"
+    },
+    {
+      "id": "5c4cdb89-7394-48b7-8b0e-37d5eb878180",
+      "buyer": {
+        "name": "Claude Leclerc",
+        "email": "claude.leclerc@example.cm",
+        "phone": "+237 6 48191000",
+        "address": "123 Maroua"
+      },
+      "region": "Maroua",
+      "shippingFee": 9000,
+      "items": [
+        {
+          "id": "2",
+          "name": "Smart Watch",
+          "price": 25000,
+          "quantity": 3,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500"
+        },
+        {
+          "id": "13",
+          "name": "USB Flash Drive",
+          "price": 4000,
+          "quantity": 2,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1624823183493-ed5832f48f18?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 83000,
+        "tax": 4150,
+        "total": 96150
+      },
+      "status": "delivered",
+      "createdAt": "2025-12-09T18:19:14.557Z"
+    },
+    {
+      "id": "69e83a39-28da-4ebc-8a6d-71afc6b8355f",
+      "buyer": {
+        "name": "Anne Simon",
+        "email": "anne.simon@example.cm",
+        "phone": "+237 6 63001000",
+        "address": "123 Limbe"
+      },
+      "region": "Limbe",
+      "shippingFee": 2500,
+      "items": [
+        {
+          "id": "14",
+          "name": "Laptop Stand",
+          "price": 9500,
+          "quantity": 1,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1625225233840-695456021cde?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 9500,
+        "tax": 475,
+        "total": 12475
+      },
+      "status": "pending",
+      "createdAt": "2025-12-12T07:19:14.557Z"
+    },
+    {
+      "id": "2c80d892-6d6c-4d85-887f-a2f7c62551d1",
+      "buyer": {
+        "name": "André Richard",
+        "email": "andré.richard@example.cm",
+        "phone": "+237 6 38101000",
+        "address": "123 Bamenda"
+      },
+      "region": "Bamenda",
+      "shippingFee": 6000,
+      "items": [
+        {
+          "id": "13",
+          "name": "USB Flash Drive",
+          "price": 4000,
+          "quantity": 3,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1624823183493-ed5832f48f18?w=500"
+        },
+        {
+          "id": "15",
+          "name": "Desk Lamp LED",
+          "price": 8500,
+          "quantity": 2,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 29000,
+        "tax": 1450,
+        "total": 36450
+      },
+      "status": "shipped",
+      "createdAt": "2025-12-13T22:19:14.557Z"
+    },
+    {
+      "id": "253c2e64-6620-429f-abaf-7b396f89832f",
+      "buyer": {
+        "name": "Paul Bernard",
+        "email": "paul.bernard@example.cm",
+        "phone": "+237 6 28001000",
+        "address": "123 Buea"
+      },
+      "region": "Buea",
+      "shippingFee": 2000,
+      "items": [
+        {
+          "id": "14",
+          "name": "Laptop Stand",
+          "price": 9500,
+          "quantity": 2,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1625225233840-695456021cde?w=500"
+        },
+        {
+          "id": "14",
+          "name": "Laptop Stand",
+          "price": 9500,
+          "quantity": 3,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1625225233840-695456021cde?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 47500,
+        "tax": 2375,
+        "total": 51875
+      },
+      "status": "delivered",
+      "createdAt": "2025-12-13T00:19:14.557Z"
+    },
+    {
+      "id": "665b7524-d6f1-4a17-9060-2ff5b41be17b",
+      "buyer": {
+        "name": "Sophie Robert",
+        "email": "sophie.robert@example.cm",
+        "phone": "+237 6 44681000",
+        "address": "123 Ngaoundéré"
+      },
+      "region": "Ngaoundéré",
+      "shippingFee": 7000,
+      "items": [
+        {
+          "id": "1",
+          "name": "Wireless Headphones",
+          "price": 15000,
+          "quantity": 3,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500"
+        },
+        {
+          "id": "5",
+          "name": "Wireless Mouse",
+          "price": 4500,
+          "quantity": 1,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=500"
+        },
+        {
+          "id": "13",
+          "name": "USB Flash Drive",
+          "price": 4000,
+          "quantity": 3,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1624823183493-ed5832f48f18?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 61500,
+        "tax": 3075,
+        "total": 71575
+      },
+      "status": "delivered",
+      "createdAt": "2025-12-17T08:19:14.557Z"
+    },
+    {
+      "id": "5889045c-304d-431f-ada0-1d2ee3a27cb5",
+      "buyer": {
+        "name": "André Richard",
+        "email": "andré.richard@example.cm",
+        "phone": "+237 6 67111000",
+        "address": "123 Bamenda"
+      },
+      "region": "Bamenda",
+      "shippingFee": 6000,
+      "items": [
+        {
+          "id": "4",
+          "name": "Bluetooth Speaker",
+          "price": 12000,
+          "quantity": 2,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 24000,
+        "tax": 1200,
+        "total": 31200
+      },
+      "status": "pending",
+      "createdAt": "2025-12-21T03:19:14.557Z"
+    },
+    {
+      "id": "4636f8b4-e0ba-4059-afca-b89096f9c5c3",
+      "buyer": {
+        "name": "Marie Martin",
+        "email": "marie.martin@example.cm",
+        "phone": "+237 6 83851000",
+        "address": "123 Bamenda"
+      },
+      "region": "Bamenda",
+      "shippingFee": 6000,
+      "items": [
+        {
+          "id": "11",
+          "name": "Webcam HD",
+          "price": 16000,
+          "quantity": 1,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?w=500"
+        },
+        {
+          "id": "11",
+          "name": "Webcam HD",
+          "price": 16000,
+          "quantity": 2,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 48000,
+        "tax": 2400,
+        "total": 56400
+      },
+      "status": "shipped",
+      "createdAt": "2025-12-07T22:19:14.557Z"
+    },
+    {
+      "id": "d01c870d-8d2c-43b8-b984-78035500ddb4",
+      "buyer": {
+        "name": "Pierre Thomas",
+        "email": "pierre.thomas@example.cm",
+        "phone": "+237 6 27271000",
+        "address": "123 Bafoussam"
+      },
+      "region": "Bafoussam",
+      "shippingFee": 5000,
+      "items": [
+        {
+          "id": "14",
+          "name": "Laptop Stand",
+          "price": 9500,
+          "quantity": 1,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1625225233840-695456021cde?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 9500,
+        "tax": 475,
+        "total": 14975
+      },
+      "status": "delivered",
+      "createdAt": "2025-12-20T21:19:14.557Z"
+    },
+    {
+      "id": "8675842d-b9b7-4451-a63e-071efb2f0ab5",
+      "buyer": {
+        "name": "Paul Bernard",
+        "email": "paul.bernard@example.cm",
+        "phone": "+237 6 21971000",
+        "address": "123 Bertoua"
+      },
+      "region": "Bertoua",
+      "shippingFee": 6500,
+      "items": [
+        {
+          "id": "10",
+          "name": "Phone Stand",
+          "price": 3500,
+          "quantity": 1,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1556656793-08538906a9f8?w=500"
+        },
+        {
+          "id": "11",
+          "name": "Webcam HD",
+          "price": 16000,
+          "quantity": 3,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?w=500"
+        },
+        {
+          "id": "6",
+          "name": "USB-C Hub",
+          "price": 6000,
+          "quantity": 1,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1625948515291-69613efd103f?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 57500,
+        "tax": 2875,
+        "total": 66875
+      },
+      "status": "delivered",
+      "createdAt": "2025-12-17T08:19:14.557Z"
+    },
+    {
+      "id": "90046f42-1ae6-4de9-8a00-ac79371cc0eb",
+      "buyer": {
+        "name": "André Richard",
+        "email": "andré.richard@example.cm",
+        "phone": "+237 6 77661000",
+        "address": "123 Bertoua"
+      },
+      "region": "Bertoua",
+      "shippingFee": 6500,
+      "items": [
+        {
+          "id": "12",
+          "name": "Gaming Mouse Pad",
+          "price": 5000,
+          "quantity": 2,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?w=500"
+        },
+        {
+          "id": "12",
+          "name": "Gaming Mouse Pad",
+          "price": 5000,
+          "quantity": 1,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 15000,
+        "tax": 750,
+        "total": 22250
+      },
+      "status": "delivered",
+      "createdAt": "2025-12-23T21:19:14.557Z"
+    },
+    {
+      "id": "be570a53-3ec4-41e5-bafd-957d4299f959",
+      "buyer": {
+        "name": "Marie Martin",
+        "email": "marie.martin@example.cm",
+        "phone": "+237 6 86741000",
+        "address": "123 Yaoundé"
+      },
+      "region": "Yaoundé",
+      "shippingFee": 3000,
+      "items": [
+        {
+          "id": "8",
+          "name": "Wireless Earbuds",
+          "price": 22000,
+          "quantity": 2,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=500"
+        },
+        {
+          "id": "13",
+          "name": "USB Flash Drive",
+          "price": 4000,
+          "quantity": 3,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1624823183493-ed5832f48f18?w=500"
+        },
+        {
+          "id": "12",
+          "name": "Gaming Mouse Pad",
+          "price": 5000,
+          "quantity": 1,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 61000,
+        "tax": 3050,
+        "total": 67050
+      },
+      "status": "delivered",
+      "createdAt": "2025-12-10T01:19:14.557Z"
+    },
+    {
+      "id": "497f4a1f-0771-4d57-9fe3-1bbbeadc5851",
+      "buyer": {
+        "name": "André Richard",
+        "email": "andré.richard@example.cm",
+        "phone": "+237 6 45731000",
+        "address": "123 Douala"
+      },
+      "region": "Douala",
+      "shippingFee": 0,
+      "items": [
+        {
+          "id": "11",
+          "name": "Webcam HD",
+          "price": 16000,
+          "quantity": 2,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?w=500"
+        },
+        {
+          "id": "8",
+          "name": "Wireless Earbuds",
+          "price": 22000,
+          "quantity": 3,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 98000,
+        "tax": 4900,
+        "total": 102900
+      },
+      "status": "shipped",
+      "createdAt": "2025-12-15T18:19:14.557Z"
+    },
+    {
+      "id": "857c205c-6e1f-4c96-b2aa-82943ee45da4",
+      "buyer": {
+        "name": "Paul Bernard",
+        "email": "paul.bernard@example.cm",
+        "phone": "+237 6 22811000",
+        "address": "123 Ngaoundéré"
+      },
+      "region": "Ngaoundéré",
+      "shippingFee": 7000,
+      "items": [
+        {
+          "id": "15",
+          "name": "Desk Lamp LED",
+          "price": 8500,
+          "quantity": 3,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?w=500"
+        },
+        {
+          "id": "7",
+          "name": "Mechanical Keyboard",
+          "price": 18000,
+          "quantity": 1,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1595225476474-87563907a212?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 43500,
+        "tax": 2175,
+        "total": 52675
+      },
+      "status": "pending",
+      "createdAt": "2025-12-12T03:19:14.557Z"
+    },
+    {
+      "id": "611aff2f-556e-4252-81dd-ab813033a5ab",
+      "buyer": {
+        "name": "Marie Martin",
+        "email": "marie.martin@example.cm",
+        "phone": "+237 6 48531000",
+        "address": "123 Garoua"
+      },
+      "region": "Garoua",
+      "shippingFee": 8000,
+      "items": [
+        {
+          "id": "2",
+          "name": "Smart Watch",
+          "price": 25000,
+          "quantity": 2,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500"
+        },
+        {
+          "id": "6",
+          "name": "USB-C Hub",
+          "price": 6000,
+          "quantity": 3,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1625948515291-69613efd103f?w=500"
+        },
+        {
+          "id": "4",
+          "name": "Bluetooth Speaker",
+          "price": 12000,
+          "quantity": 3,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 104000,
+        "tax": 5200,
+        "total": 117200
+      },
+      "status": "pending",
+      "createdAt": "2025-12-02T22:19:14.557Z"
+    },
+    {
+      "id": "6198dd06-3cdb-44ab-812b-1a35246ba10f",
+      "buyer": {
+        "name": "André Richard",
+        "email": "andré.richard@example.cm",
+        "phone": "+237 6 3261000",
+        "address": "123 Bertoua"
+      },
+      "region": "Bertoua",
+      "shippingFee": 6500,
+      "items": [
+        {
+          "id": "4",
+          "name": "Bluetooth Speaker",
+          "price": 12000,
+          "quantity": 1,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=500"
+        },
+        {
+          "id": "2",
+          "name": "Smart Watch",
+          "price": 25000,
+          "quantity": 1,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500"
+        },
+        {
+          "id": "7",
+          "name": "Mechanical Keyboard",
+          "price": 18000,
+          "quantity": 3,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1595225476474-87563907a212?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 91000,
+        "tax": 4550,
+        "total": 102050
+      },
+      "status": "shipped",
+      "createdAt": "2025-12-27T17:19:14.557Z"
+    },
+    {
+      "id": "2b61202e-d817-42f0-aedf-aef2c654aa0e",
+      "buyer": {
+        "name": "Jean Dupont",
+        "email": "jean.dupont@example.cm",
+        "phone": "+237 6 57021000",
+        "address": "123 Ngaoundéré"
+      },
+      "region": "Ngaoundéré",
+      "shippingFee": 7000,
+      "items": [
+        {
+          "id": "13",
+          "name": "USB Flash Drive",
+          "price": 4000,
+          "quantity": 3,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1624823183493-ed5832f48f18?w=500"
+        },
+        {
+          "id": "15",
+          "name": "Desk Lamp LED",
+          "price": 8500,
+          "quantity": 2,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 29000,
+        "tax": 1450,
+        "total": 37450
+      },
+      "status": "pending",
+      "createdAt": "2025-12-23T08:19:14.557Z"
+    },
+    {
+      "id": "7f2d4560-4cb5-4cad-bfa1-372ea926a6be",
+      "buyer": {
+        "name": "André Richard",
+        "email": "andré.richard@example.cm",
+        "phone": "+237 6 71351000",
+        "address": "123 Yaoundé"
+      },
+      "region": "Yaoundé",
+      "shippingFee": 3000,
+      "items": [
+        {
+          "id": "6",
+          "name": "USB-C Hub",
+          "price": 6000,
+          "quantity": 3,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1625948515291-69613efd103f?w=500"
+        },
+        {
+          "id": "15",
+          "name": "Desk Lamp LED",
+          "price": 8500,
+          "quantity": 2,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 35000,
+        "tax": 1750,
+        "total": 39750
+      },
+      "status": "delivered",
+      "createdAt": "2025-12-13T01:19:14.557Z"
+    },
+    {
+      "id": "72d03243-3ed9-4a6a-83db-9c379e534896",
+      "buyer": {
+        "name": "André Richard",
+        "email": "andré.richard@example.cm",
+        "phone": "+237 6 55791000",
+        "address": "123 Maroua"
+      },
+      "region": "Maroua",
+      "shippingFee": 9000,
+      "items": [
+        {
+          "id": "1",
+          "name": "Wireless Headphones",
+          "price": 15000,
+          "quantity": 2,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 30000,
+        "tax": 1500,
+        "total": 40500
+      },
+      "status": "processing",
+      "createdAt": "2025-12-19T04:19:14.557Z"
+    },
+    {
+      "id": "017b63b0-2e13-4235-968b-f5a9e8b1ed6f",
+      "buyer": {
+        "name": "Luc Laurent",
+        "email": "luc.laurent@example.cm",
+        "phone": "+237 6 44031000",
+        "address": "123 Douala"
+      },
+      "region": "Douala",
+      "shippingFee": 0,
+      "items": [
+        {
+          "id": "7",
+          "name": "Mechanical Keyboard",
+          "price": 18000,
+          "quantity": 2,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1595225476474-87563907a212?w=500"
+        },
+        {
+          "id": "3",
+          "name": "Laptop Backpack",
+          "price": 8000,
+          "quantity": 2,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=500"
+        },
+        {
+          "id": "6",
+          "name": "USB-C Hub",
+          "price": 6000,
+          "quantity": 2,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1625948515291-69613efd103f?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 64000,
+        "tax": 3200,
+        "total": 67200
+      },
+      "status": "processing",
+      "createdAt": "2025-12-18T04:19:14.557Z"
+    },
+    {
+      "id": "b053f571-6bba-45ee-a66c-85c938c85788",
+      "buyer": {
+        "name": "François Moreau",
+        "email": "françois.moreau@example.cm",
+        "phone": "+237 6 78481000",
+        "address": "123 Bertoua"
+      },
+      "region": "Bertoua",
+      "shippingFee": 6500,
+      "items": [
+        {
+          "id": "10",
+          "name": "Phone Stand",
+          "price": 3500,
+          "quantity": 1,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1556656793-08538906a9f8?w=500"
+        },
+        {
+          "id": "13",
+          "name": "USB Flash Drive",
+          "price": 4000,
+          "quantity": 3,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1624823183493-ed5832f48f18?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 15500,
+        "tax": 775,
+        "total": 22775
+      },
+      "status": "shipped",
+      "createdAt": "2025-11-30T15:19:14.557Z"
+    },
+    {
+      "id": "0bf6d18b-0059-47e9-bade-3756373f39e8",
+      "buyer": {
+        "name": "Claude Leclerc",
+        "email": "claude.leclerc@example.cm",
+        "phone": "+237 6 57111000",
+        "address": "123 Douala"
+      },
+      "region": "Douala",
+      "shippingFee": 0,
+      "items": [
+        {
+          "id": "3",
+          "name": "Laptop Backpack",
+          "price": 8000,
+          "quantity": 2,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=500"
+        },
+        {
+          "id": "2",
+          "name": "Smart Watch",
+          "price": 25000,
+          "quantity": 3,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 91000,
+        "tax": 4550,
+        "total": 95550
+      },
+      "status": "delivered",
+      "createdAt": "2025-12-04T13:19:14.557Z"
+    },
+    {
+      "id": "f9d1e8fa-9299-415a-85e3-76823f65c052",
+      "buyer": {
+        "name": "Sophie Robert",
+        "email": "sophie.robert@example.cm",
+        "phone": "+237 6 41431000",
+        "address": "123 Bamenda"
+      },
+      "region": "Bamenda",
+      "shippingFee": 6000,
+      "items": [
+        {
+          "id": "2",
+          "name": "Smart Watch",
+          "price": 25000,
+          "quantity": 1,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500"
+        },
+        {
+          "id": "2",
+          "name": "Smart Watch",
+          "price": 25000,
+          "quantity": 2,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 75000,
+        "tax": 3750,
+        "total": 84750
+      },
+      "status": "processing",
+      "createdAt": "2025-12-02T23:19:14.557Z"
+    },
+    {
+      "id": "15b33b7b-7d82-4f7c-ae88-a93c6db85a96",
+      "buyer": {
+        "name": "Jean Dupont",
+        "email": "jean.dupont@example.cm",
+        "phone": "+237 6 43971000",
+        "address": "123 Bertoua"
+      },
+      "region": "Bertoua",
+      "shippingFee": 6500,
+      "items": [
+        {
+          "id": "3",
+          "name": "Laptop Backpack",
+          "price": 8000,
+          "quantity": 1,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=500"
+        },
+        {
+          "id": "6",
+          "name": "USB-C Hub",
+          "price": 6000,
+          "quantity": 2,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1625948515291-69613efd103f?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 20000,
+        "tax": 1000,
+        "total": 27500
+      },
+      "status": "delivered",
+      "createdAt": "2025-12-05T17:19:14.557Z"
+    },
+    {
+      "id": "0d619054-b128-4e49-a1f8-bf59f73417b1",
+      "buyer": {
+        "name": "Paul Bernard",
+        "email": "paul.bernard@example.cm",
+        "phone": "+237 6 87791000",
+        "address": "123 Bertoua"
+      },
+      "region": "Bertoua",
+      "shippingFee": 6500,
+      "items": [
+        {
+          "id": "2",
+          "name": "Smart Watch",
+          "price": 25000,
+          "quantity": 3,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500"
+        },
+        {
+          "id": "7",
+          "name": "Mechanical Keyboard",
+          "price": 18000,
+          "quantity": 3,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1595225476474-87563907a212?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 129000,
+        "tax": 6450,
+        "total": 141950
+      },
+      "status": "delivered",
+      "createdAt": "2025-12-12T13:19:14.557Z"
+    },
+    {
+      "id": "1b9ad0fe-f19a-439f-ba5e-ba5f68539aa6",
+      "buyer": {
+        "name": "André Richard",
+        "email": "andré.richard@example.cm",
+        "phone": "+237 6 46621000",
+        "address": "123 Bafoussam"
+      },
+      "region": "Bafoussam",
+      "shippingFee": 5000,
+      "items": [
+        {
+          "id": "5",
+          "name": "Wireless Mouse",
+          "price": 4500,
+          "quantity": 3,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 13500,
+        "tax": 675,
+        "total": 19175
+      },
+      "status": "processing",
+      "createdAt": "2025-12-14T11:19:14.557Z"
+    },
+    {
+      "id": "910fb286-1533-4b65-8d27-d0bfd1f683c2",
+      "buyer": {
+        "name": "Luc Laurent",
+        "email": "luc.laurent@example.cm",
+        "phone": "+237 6 17571000",
+        "address": "123 Ngaoundéré"
+      },
+      "region": "Ngaoundéré",
+      "shippingFee": 7000,
+      "items": [
+        {
+          "id": "5",
+          "name": "Wireless Mouse",
+          "price": 4500,
+          "quantity": 2,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=500"
+        },
+        {
+          "id": "10",
+          "name": "Phone Stand",
+          "price": 3500,
+          "quantity": 1,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1556656793-08538906a9f8?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 12500,
+        "tax": 625,
+        "total": 20125
+      },
+      "status": "shipped",
+      "createdAt": "2025-11-29T12:19:14.557Z"
+    },
+    {
+      "id": "15bc5634-22c5-4e0c-87bc-7c3f104e9f54",
+      "buyer": {
+        "name": "Pierre Thomas",
+        "email": "pierre.thomas@example.cm",
+        "phone": "+237 6 70911000",
+        "address": "123 Bertoua"
+      },
+      "region": "Bertoua",
+      "shippingFee": 6500,
+      "items": [
+        {
+          "id": "11",
+          "name": "Webcam HD",
+          "price": 16000,
+          "quantity": 2,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?w=500"
+        },
+        {
+          "id": "11",
+          "name": "Webcam HD",
+          "price": 16000,
+          "quantity": 3,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 80000,
+        "tax": 4000,
+        "total": 90500
+      },
+      "status": "delivered",
+      "createdAt": "2025-12-28T18:19:14.557Z"
+    },
+    {
+      "id": "b3136f8b-17bd-4bce-96d9-90b4e1958123",
+      "buyer": {
+        "name": "Paul Bernard",
+        "email": "paul.bernard@example.cm",
+        "phone": "+237 6 69331000",
+        "address": "123 Douala"
+      },
+      "region": "Douala",
+      "shippingFee": 0,
+      "items": [
+        {
+          "id": "8",
+          "name": "Wireless Earbuds",
+          "price": 22000,
+          "quantity": 2,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 44000,
+        "tax": 2200,
+        "total": 46200
+      },
+      "status": "delivered",
+      "createdAt": "2025-12-04T23:19:14.557Z"
+    },
+    {
+      "id": "4fd161b4-2b3c-4d98-8a74-cd849f7eeed1",
+      "buyer": {
+        "name": "Paul Bernard",
+        "email": "paul.bernard@example.cm",
+        "phone": "+237 6 78001000",
+        "address": "123 Garoua"
+      },
+      "region": "Garoua",
+      "shippingFee": 8000,
+      "items": [
+        {
+          "id": "15",
+          "name": "Desk Lamp LED",
+          "price": 8500,
+          "quantity": 1,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?w=500"
+        },
+        {
+          "id": "3",
+          "name": "Laptop Backpack",
+          "price": 8000,
+          "quantity": 1,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=500"
+        },
+        {
+          "id": "10",
+          "name": "Phone Stand",
+          "price": 3500,
+          "quantity": 3,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1556656793-08538906a9f8?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 27000,
+        "tax": 1350,
+        "total": 36350
+      },
+      "status": "processing",
+      "createdAt": "2025-12-10T08:19:14.557Z"
+    },
+    {
+      "id": "bf87fe9e-5991-489f-b5f4-dbe58920aefd",
+      "buyer": {
+        "name": "Claude Leclerc",
+        "email": "claude.leclerc@example.cm",
+        "phone": "+237 6 4831000",
+        "address": "123 Ngaoundéré"
+      },
+      "region": "Ngaoundéré",
+      "shippingFee": 7000,
+      "items": [
+        {
+          "id": "12",
+          "name": "Gaming Mouse Pad",
+          "price": 5000,
+          "quantity": 3,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 15000,
+        "tax": 750,
+        "total": 22750
+      },
+      "status": "delivered",
+      "createdAt": "2025-12-05T15:19:14.557Z"
+    },
+    {
+      "id": "9fe290b3-704b-4893-bf1d-e4c37fd0a5cc",
+      "buyer": {
+        "name": "Claude Leclerc",
+        "email": "claude.leclerc@example.cm",
+        "phone": "+237 6 70161000",
+        "address": "123 Yaoundé"
+      },
+      "region": "Yaoundé",
+      "shippingFee": 3000,
+      "items": [
+        {
+          "id": "7",
+          "name": "Mechanical Keyboard",
+          "price": 18000,
+          "quantity": 1,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1595225476474-87563907a212?w=500"
+        },
+        {
+          "id": "6",
+          "name": "USB-C Hub",
+          "price": 6000,
+          "quantity": 3,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1625948515291-69613efd103f?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 36000,
+        "tax": 1800,
+        "total": 40800
+      },
+      "status": "delivered",
+      "createdAt": "2025-12-10T22:19:14.557Z"
+    },
+    {
+      "id": "97224f79-e940-4d39-9441-1527ea80b195",
+      "buyer": {
+        "name": "Pierre Thomas",
+        "email": "pierre.thomas@example.cm",
+        "phone": "+237 6 58961000",
+        "address": "123 Bertoua"
+      },
+      "region": "Bertoua",
+      "shippingFee": 6500,
+      "items": [
+        {
+          "id": "7",
+          "name": "Mechanical Keyboard",
+          "price": 18000,
+          "quantity": 1,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1595225476474-87563907a212?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 18000,
+        "tax": 900,
+        "total": 25400
+      },
+      "status": "processing",
+      "createdAt": "2025-12-17T23:19:14.557Z"
+    },
+    {
+      "id": "1f0ed0fd-cfc1-4e2f-bd92-2dc928b9ed58",
+      "buyer": {
+        "name": "Luc Laurent",
+        "email": "luc.laurent@example.cm",
+        "phone": "+237 6 20121000",
+        "address": "123 Bamenda"
+      },
+      "region": "Bamenda",
+      "shippingFee": 6000,
+      "items": [
+        {
+          "id": "14",
+          "name": "Laptop Stand",
+          "price": 9500,
+          "quantity": 2,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1625225233840-695456021cde?w=500"
+        },
+        {
+          "id": "4",
+          "name": "Bluetooth Speaker",
+          "price": 12000,
+          "quantity": 2,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=500"
+        },
+        {
+          "id": "12",
+          "name": "Gaming Mouse Pad",
+          "price": 5000,
+          "quantity": 3,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 58000,
+        "tax": 2900,
+        "total": 66900
+      },
+      "status": "delivered",
+      "createdAt": "2025-12-27T03:19:14.557Z"
+    },
+    {
+      "id": "492fe7e2-4936-4be7-be3f-b8527b1b13a9",
+      "buyer": {
+        "name": "François Moreau",
+        "email": "françois.moreau@example.cm",
+        "phone": "+237 6 74581000",
+        "address": "123 Bafoussam"
+      },
+      "region": "Bafoussam",
+      "shippingFee": 5000,
+      "items": [
+        {
+          "id": "13",
+          "name": "USB Flash Drive",
+          "price": 4000,
+          "quantity": 1,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1624823183493-ed5832f48f18?w=500"
+        },
+        {
+          "id": "15",
+          "name": "Desk Lamp LED",
+          "price": 8500,
+          "quantity": 3,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?w=500"
+        },
+        {
+          "id": "10",
+          "name": "Phone Stand",
+          "price": 3500,
+          "quantity": 3,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1556656793-08538906a9f8?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 40000,
+        "tax": 2000,
+        "total": 47000
+      },
+      "status": "delivered",
+      "createdAt": "2025-12-20T05:19:14.557Z"
+    },
+    {
+      "id": "df42b8f1-5456-4ca7-a3d4-b974a8761742",
+      "buyer": {
+        "name": "Luc Laurent",
+        "email": "luc.laurent@example.cm",
+        "phone": "+237 6 23001000",
+        "address": "123 Buea"
+      },
+      "region": "Buea",
+      "shippingFee": 2000,
+      "items": [
+        {
+          "id": "15",
+          "name": "Desk Lamp LED",
+          "price": 8500,
+          "quantity": 1,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 8500,
+        "tax": 425,
+        "total": 10925
+      },
+      "status": "shipped",
+      "createdAt": "2025-12-05T18:19:14.557Z"
+    },
+    {
+      "id": "bd192102-e47d-40db-9aeb-a2062cef9079",
+      "buyer": {
+        "name": "Luc Laurent",
+        "email": "luc.laurent@example.cm",
+        "phone": "+237 6 36201000",
+        "address": "123 Maroua"
+      },
+      "region": "Maroua",
+      "shippingFee": 9000,
+      "items": [
+        {
+          "id": "13",
+          "name": "USB Flash Drive",
+          "price": 4000,
+          "quantity": 1,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1624823183493-ed5832f48f18?w=500"
+        },
+        {
+          "id": "12",
+          "name": "Gaming Mouse Pad",
+          "price": 5000,
+          "quantity": 2,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 14000,
+        "tax": 700,
+        "total": 23700
+      },
+      "status": "processing",
+      "createdAt": "2025-12-07T14:19:14.557Z"
+    },
+    {
+      "id": "9ccb6df2-b1ec-4f9f-a637-327ede72d7bb",
+      "buyer": {
+        "name": "Sophie Robert",
+        "email": "sophie.robert@example.cm",
+        "phone": "+237 6 57171000",
+        "address": "123 Douala"
+      },
+      "region": "Douala",
+      "shippingFee": 0,
+      "items": [
+        {
+          "id": "15",
+          "name": "Desk Lamp LED",
+          "price": 8500,
+          "quantity": 2,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?w=500"
+        },
+        {
+          "id": "1",
+          "name": "Wireless Headphones",
+          "price": 15000,
+          "quantity": 1,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 32000,
+        "tax": 1600,
+        "total": 33600
+      },
+      "status": "delivered",
+      "createdAt": "2025-12-21T14:19:14.557Z"
+    },
+    {
+      "id": "72ad2c32-46b6-461a-848f-1871b2d8becf",
+      "buyer": {
+        "name": "Jean Dupont",
+        "email": "jean.dupont@example.cm",
+        "phone": "+237 6 85641000",
+        "address": "123 Buea"
+      },
+      "region": "Buea",
+      "shippingFee": 2000,
+      "items": [
+        {
+          "id": "2",
+          "name": "Smart Watch",
+          "price": 25000,
+          "quantity": 2,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500"
+        },
+        {
+          "id": "14",
+          "name": "Laptop Stand",
+          "price": 9500,
+          "quantity": 2,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1625225233840-695456021cde?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 69000,
+        "tax": 3450,
+        "total": 74450
+      },
+      "status": "delivered",
+      "createdAt": "2025-12-26T07:19:14.557Z"
+    },
+    {
+      "id": "d4b69c5f-66bc-4376-90cc-4c1fd06f8796",
+      "buyer": {
+        "name": "Sophie Robert",
+        "email": "sophie.robert@example.cm",
+        "phone": "+237 6 60441000",
+        "address": "123 Bamenda"
+      },
+      "region": "Bamenda",
+      "shippingFee": 6000,
+      "items": [
+        {
+          "id": "4",
+          "name": "Bluetooth Speaker",
+          "price": 12000,
+          "quantity": 2,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=500"
+        },
+        {
+          "id": "12",
+          "name": "Gaming Mouse Pad",
+          "price": 5000,
+          "quantity": 3,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 39000,
+        "tax": 1950,
+        "total": 46950
+      },
+      "status": "delivered",
+      "createdAt": "2025-12-22T16:19:14.557Z"
+    },
+    {
+      "id": "f2c85a40-53bf-43d3-9d70-fa0aa37155ab",
+      "buyer": {
+        "name": "Jean Dupont",
+        "email": "jean.dupont@example.cm",
+        "phone": "+237 6 57941000",
+        "address": "123 Garoua"
+      },
+      "region": "Garoua",
+      "shippingFee": 8000,
+      "items": [
+        {
+          "id": "13",
+          "name": "USB Flash Drive",
+          "price": 4000,
+          "quantity": 2,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1624823183493-ed5832f48f18?w=500"
+        },
+        {
+          "id": "5",
+          "name": "Wireless Mouse",
+          "price": 4500,
+          "quantity": 3,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=500"
+        },
+        {
+          "id": "14",
+          "name": "Laptop Stand",
+          "price": 9500,
+          "quantity": 3,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1625225233840-695456021cde?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 50000,
+        "tax": 2500,
+        "total": 60500
+      },
+      "status": "delivered",
+      "createdAt": "2025-12-26T02:19:14.557Z"
+    },
+    {
+      "id": "10f728fb-4cc8-4551-b1f8-d9c78d1e65d1",
+      "buyer": {
+        "name": "Marie Martin",
+        "email": "marie.martin@example.cm",
+        "phone": "+237 6 51111000",
+        "address": "123 Bafoussam"
+      },
+      "region": "Bafoussam",
+      "shippingFee": 5000,
+      "items": [
+        {
+          "id": "15",
+          "name": "Desk Lamp LED",
+          "price": 8500,
+          "quantity": 1,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?w=500"
+        },
+        {
+          "id": "10",
+          "name": "Phone Stand",
+          "price": 3500,
+          "quantity": 2,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1556656793-08538906a9f8?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 15500,
+        "tax": 775,
+        "total": 21275
+      },
+      "status": "shipped",
+      "createdAt": "2025-12-22T03:19:14.557Z"
+    },
+    {
+      "id": "730c5728-b76e-45fe-96c0-63bf4c88d31e",
+      "buyer": {
+        "name": "Paul Bernard",
+        "email": "paul.bernard@example.cm",
+        "phone": "+237 6 10081000",
+        "address": "123 Garoua"
+      },
+      "region": "Garoua",
+      "shippingFee": 8000,
+      "items": [
+        {
+          "id": "2",
+          "name": "Smart Watch",
+          "price": 25000,
+          "quantity": 2,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 50000,
+        "tax": 2500,
+        "total": 60500
+      },
+      "status": "pending",
+      "createdAt": "2025-12-10T04:19:14.557Z"
+    },
+    {
+      "id": "ad4fcbad-fc0d-49a6-b2de-62b261948f39",
+      "buyer": {
+        "name": "Jean Dupont",
+        "email": "jean.dupont@example.cm",
+        "phone": "+237 6 35691000",
+        "address": "123 Bafoussam"
+      },
+      "region": "Bafoussam",
+      "shippingFee": 5000,
+      "items": [
+        {
+          "id": "2",
+          "name": "Smart Watch",
+          "price": 25000,
+          "quantity": 3,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500"
+        },
+        {
+          "id": "3",
+          "name": "Laptop Backpack",
+          "price": 8000,
+          "quantity": 1,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=500"
+        },
+        {
+          "id": "8",
+          "name": "Wireless Earbuds",
+          "price": 22000,
+          "quantity": 1,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 105000,
+        "tax": 5250,
+        "total": 115250
+      },
+      "status": "processing",
+      "createdAt": "2025-11-29T10:19:14.557Z"
+    },
+    {
+      "id": "b914418a-a303-4a7b-b422-dcc662b5bf15",
+      "buyer": {
+        "name": "Anne Simon",
+        "email": "anne.simon@example.cm",
+        "phone": "+237 6 38821000",
+        "address": "123 Bertoua"
+      },
+      "region": "Bertoua",
+      "shippingFee": 6500,
+      "items": [
+        {
+          "id": "6",
+          "name": "USB-C Hub",
+          "price": 6000,
+          "quantity": 1,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1625948515291-69613efd103f?w=500"
+        },
+        {
+          "id": "1",
+          "name": "Wireless Headphones",
+          "price": 15000,
+          "quantity": 2,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 36000,
+        "tax": 1800,
+        "total": 44300
+      },
+      "status": "processing",
+      "createdAt": "2025-12-12T05:19:14.557Z"
+    },
+    {
+      "id": "5a4f3d9c-06f6-447d-8ccc-66be90e0e895",
+      "buyer": {
+        "name": "Luc Laurent",
+        "email": "luc.laurent@example.cm",
+        "phone": "+237 6 54871000",
+        "address": "123 Limbe"
+      },
+      "region": "Limbe",
+      "shippingFee": 2500,
+      "items": [
+        {
+          "id": "4",
+          "name": "Bluetooth Speaker",
+          "price": 12000,
+          "quantity": 3,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=500"
+        },
+        {
+          "id": "4",
+          "name": "Bluetooth Speaker",
+          "price": 12000,
+          "quantity": 1,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=500"
+        },
+        {
+          "id": "12",
+          "name": "Gaming Mouse Pad",
+          "price": 5000,
+          "quantity": 3,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 63000,
+        "tax": 3150,
+        "total": 68650
+      },
+      "status": "shipped",
+      "createdAt": "2025-11-29T15:19:14.557Z"
+    },
+    {
+      "id": "a1af7686-5b14-4b80-9f4f-48e2e8d713d7",
+      "buyer": {
+        "name": "Claude Leclerc",
+        "email": "claude.leclerc@example.cm",
+        "phone": "+237 6 38501000",
+        "address": "123 Ngaoundéré"
+      },
+      "region": "Ngaoundéré",
+      "shippingFee": 7000,
+      "items": [
+        {
+          "id": "5",
+          "name": "Wireless Mouse",
+          "price": 4500,
+          "quantity": 3,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 13500,
+        "tax": 675,
+        "total": 21175
+      },
+      "status": "processing",
+      "createdAt": "2025-12-02T05:19:14.557Z"
+    },
+    {
+      "id": "dad0efd3-7373-4c4d-a49e-b691de3546a7",
+      "buyer": {
+        "name": "Anne Simon",
+        "email": "anne.simon@example.cm",
+        "phone": "+237 6 44771000",
+        "address": "123 Yaoundé"
+      },
+      "region": "Yaoundé",
+      "shippingFee": 3000,
+      "items": [
+        {
+          "id": "12",
+          "name": "Gaming Mouse Pad",
+          "price": 5000,
+          "quantity": 2,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 10000,
+        "tax": 500,
+        "total": 13500
+      },
+      "status": "processing",
+      "createdAt": "2025-12-20T21:19:14.557Z"
+    },
+    {
+      "id": "9a3c92ff-5aa2-42d2-ac7d-c3e7af83a041",
+      "buyer": {
+        "name": "Marie Martin",
+        "email": "marie.martin@example.cm",
+        "phone": "+237 6 52601000",
+        "address": "123 Limbe"
+      },
+      "region": "Limbe",
+      "shippingFee": 2500,
+      "items": [
+        {
+          "id": "7",
+          "name": "Mechanical Keyboard",
+          "price": 18000,
+          "quantity": 2,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1595225476474-87563907a212?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 36000,
+        "tax": 1800,
+        "total": 40300
+      },
+      "status": "pending",
+      "createdAt": "2025-12-10T20:19:14.557Z"
+    },
+    {
+      "id": "597b0d63-de06-4ba5-a7a5-09ba694ccfe7",
+      "buyer": {
+        "name": "André Richard",
+        "email": "andré.richard@example.cm",
+        "phone": "+237 6 5221000",
+        "address": "123 Maroua"
+      },
+      "region": "Maroua",
+      "shippingFee": 9000,
+      "items": [
+        {
+          "id": "14",
+          "name": "Laptop Stand",
+          "price": 9500,
+          "quantity": 3,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1625225233840-695456021cde?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 28500,
+        "tax": 1425,
+        "total": 38925
+      },
+      "status": "pending",
+      "createdAt": "2025-12-08T07:19:14.557Z"
+    },
+    {
+      "id": "a5447c2e-8032-43ff-90e8-52fb985146a0",
+      "buyer": {
+        "name": "André Richard",
+        "email": "andré.richard@example.cm",
+        "phone": "+237 6 9531000",
+        "address": "123 Douala"
+      },
+      "region": "Douala",
+      "shippingFee": 0,
+      "items": [
+        {
+          "id": "1",
+          "name": "Wireless Headphones",
+          "price": 15000,
+          "quantity": 1,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 15000,
+        "tax": 750,
+        "total": 15750
+      },
+      "status": "processing",
+      "createdAt": "2025-12-17T11:19:14.557Z"
+    },
+    {
+      "id": "3bb9512c-90a5-45e9-90a9-f38aa2de641c",
+      "buyer": {
+        "name": "Marie Martin",
+        "email": "marie.martin@example.cm",
+        "phone": "+237 6 64851000",
+        "address": "123 Yaoundé"
+      },
+      "region": "Yaoundé",
+      "shippingFee": 3000,
+      "items": [
+        {
+          "id": "11",
+          "name": "Webcam HD",
+          "price": 16000,
+          "quantity": 2,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 32000,
+        "tax": 1600,
+        "total": 36600
+      },
+      "status": "processing",
+      "createdAt": "2025-12-06T05:19:14.557Z"
+    },
+    {
+      "id": "60073092-97f0-4785-848c-678178ec0fa3",
+      "buyer": {
+        "name": "Jean Dupont",
+        "email": "jean.dupont@example.cm",
+        "phone": "+237 6 26941000",
+        "address": "123 Limbe"
+      },
+      "region": "Limbe",
+      "shippingFee": 2500,
+      "items": [
+        {
+          "id": "1",
+          "name": "Wireless Headphones",
+          "price": 15000,
+          "quantity": 2,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500"
+        },
+        {
+          "id": "15",
+          "name": "Desk Lamp LED",
+          "price": 8500,
+          "quantity": 2,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 47000,
+        "tax": 2350,
+        "total": 51850
+      },
+      "status": "processing",
+      "createdAt": "2025-12-21T21:19:14.557Z"
+    },
+    {
+      "id": "1f9ae108-144b-47a7-b6a2-b3a0491f250d",
+      "buyer": {
+        "name": "Pierre Thomas",
+        "email": "pierre.thomas@example.cm",
+        "phone": "+237 6 31451000",
+        "address": "123 Bamenda"
+      },
+      "region": "Bamenda",
+      "shippingFee": 6000,
+      "items": [
+        {
+          "id": "5",
+          "name": "Wireless Mouse",
+          "price": 4500,
+          "quantity": 2,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=500"
+        },
+        {
+          "id": "15",
+          "name": "Desk Lamp LED",
+          "price": 8500,
+          "quantity": 3,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 34500,
+        "tax": 1725,
+        "total": 42225
+      },
+      "status": "processing",
+      "createdAt": "2025-12-22T03:19:14.557Z"
+    },
+    {
+      "id": "8e4f8e4b-6e39-4d05-a056-172ce7061be3",
+      "buyer": {
+        "name": "Anne Simon",
+        "email": "anne.simon@example.cm",
+        "phone": "+237 6 21221000",
+        "address": "123 Buea"
+      },
+      "region": "Buea",
+      "shippingFee": 2000,
+      "items": [
+        {
+          "id": "4",
+          "name": "Bluetooth Speaker",
+          "price": 12000,
+          "quantity": 3,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=500"
+        },
+        {
+          "id": "7",
+          "name": "Mechanical Keyboard",
+          "price": 18000,
+          "quantity": 2,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1595225476474-87563907a212?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 72000,
+        "tax": 3600,
+        "total": 77600
+      },
+      "status": "shipped",
+      "createdAt": "2025-12-15T02:19:14.557Z"
+    },
+    {
+      "id": "eea56213-7bb8-46aa-b442-9e40c88a72e4",
+      "buyer": {
+        "name": "Anne Simon",
+        "email": "anne.simon@example.cm",
+        "phone": "+237 6 18441000",
+        "address": "123 Bamenda"
+      },
+      "region": "Bamenda",
+      "shippingFee": 6000,
+      "items": [
+        {
+          "id": "7",
+          "name": "Mechanical Keyboard",
+          "price": 18000,
+          "quantity": 1,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1595225476474-87563907a212?w=500"
+        },
+        {
+          "id": "14",
+          "name": "Laptop Stand",
+          "price": 9500,
+          "quantity": 1,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1625225233840-695456021cde?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 27500,
+        "tax": 1375,
+        "total": 34875
+      },
+      "status": "shipped",
+      "createdAt": "2025-12-19T09:19:14.557Z"
+    },
+    {
+      "id": "8bbbdbc1-13ca-4d2b-a11b-18071cb8ca05",
+      "buyer": {
+        "name": "François Moreau",
+        "email": "françois.moreau@example.cm",
+        "phone": "+237 6 14611000",
+        "address": "123 Limbe"
+      },
+      "region": "Limbe",
+      "shippingFee": 2500,
+      "items": [
+        {
+          "id": "3",
+          "name": "Laptop Backpack",
+          "price": 8000,
+          "quantity": 1,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=500"
+        },
+        {
+          "id": "5",
+          "name": "Wireless Mouse",
+          "price": 4500,
+          "quantity": 1,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 12500,
+        "tax": 625,
+        "total": 15625
+      },
+      "status": "shipped",
+      "createdAt": "2025-12-10T12:19:14.557Z"
+    },
+    {
+      "id": "f3dedd95-e347-4b60-b293-97b269a6538b",
+      "buyer": {
+        "name": "Marie Martin",
+        "email": "marie.martin@example.cm",
+        "phone": "+237 6 49061000",
+        "address": "123 Douala"
+      },
+      "region": "Douala",
+      "shippingFee": 0,
+      "items": [
+        {
+          "id": "6",
+          "name": "USB-C Hub",
+          "price": 6000,
+          "quantity": 3,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1625948515291-69613efd103f?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 18000,
+        "tax": 900,
+        "total": 18900
+      },
+      "status": "pending",
+      "createdAt": "2025-12-04T12:19:14.557Z"
+    },
+    {
+      "id": "03a5d6fb-d48e-41e4-a8fd-8c25e3d963a6",
+      "buyer": {
+        "name": "Marie Martin",
+        "email": "marie.martin@example.cm",
+        "phone": "+237 6 33821000",
+        "address": "123 Maroua"
+      },
+      "region": "Maroua",
+      "shippingFee": 9000,
+      "items": [
+        {
+          "id": "1",
+          "name": "Wireless Headphones",
+          "price": 15000,
+          "quantity": 2,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 30000,
+        "tax": 1500,
+        "total": 40500
+      },
+      "status": "delivered",
+      "createdAt": "2025-12-09T14:19:14.557Z"
+    },
+    {
+      "id": "1488ff98-3608-48b5-ac4d-fcfd2d9c69f4",
+      "buyer": {
+        "name": "Paul Bernard",
+        "email": "paul.bernard@example.cm",
+        "phone": "+237 6 20231000",
+        "address": "123 Bamenda"
+      },
+      "region": "Bamenda",
+      "shippingFee": 6000,
+      "items": [
+        {
+          "id": "10",
+          "name": "Phone Stand",
+          "price": 3500,
+          "quantity": 2,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1556656793-08538906a9f8?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 7000,
+        "tax": 350,
+        "total": 13350
+      },
+      "status": "processing",
+      "createdAt": "2025-12-20T17:19:14.557Z"
+    },
+    {
+      "id": "b5c566bb-8a2a-4f6d-bed5-2e80be29fd1c",
+      "buyer": {
+        "name": "Marie Martin",
+        "email": "marie.martin@example.cm",
+        "phone": "+237 6 64651000",
+        "address": "123 Ngaoundéré"
+      },
+      "region": "Ngaoundéré",
+      "shippingFee": 7000,
+      "items": [
+        {
+          "id": "7",
+          "name": "Mechanical Keyboard",
+          "price": 18000,
+          "quantity": 2,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1595225476474-87563907a212?w=500"
+        },
+        {
+          "id": "3",
+          "name": "Laptop Backpack",
+          "price": 8000,
+          "quantity": 2,
+          "selectedImageUrl": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=500"
+        }
+      ],
+      "totals": {
+        "subtotal": 52000,
+        "tax": 2600,
+        "total": 61600
+      },
+      "status": "delivered",
+      "createdAt": "2025-12-17T13:19:14.557Z"
+    }
+  ],
+  "receipts": [
+    {
+      "id": "RCP-1767128165330",
+      "customer": {
+        "name": "NDIMIH",
+        "phone": "652882753"
+      },
+      "items": [
+        {
+          "name": "Iphone 17pro max",
+          "price": 600000,
+          "quantity": 3,
+          "properties": [
+            {
+              "name": "COLOR",
+              "value": "BLACK"
+            },
+            {
+              "name": "RAM",
+              "value": "12GB"
+            }
+          ]
+        }
+      ],
+      "totals": {
+        "subtotal": 1800000,
+        "discount": 0,
+        "total": 1800000
+      },
+      "discountPercent": 0,
+      "createdAt": "30/12/2025, 21:56:05",
+      "platformName": "NBNShop",
+      "savedAt": "2025-12-30T20:56:05.358Z",
+      "timestamp": 1767128165358
     }
   ],
   "users": [],
   "categories": [],
   "admin": {
     "email": "ndimihboclair4@gmail.com",
-    "password": "$2a$10$KnMNeVUCwffRuwp3F1U/ZeCZGEQcBW8GGtdVzSgaiypdGtR5KzLye"
+    "password": "$2a$10$KnMNeVUCwffRuwp3F1U/ZeCZGEQcBW8GGtdVzSgaiypdGtR5KzLye",
+    "platformName": "NBNShop",
+    "heroSection": {
+      "badge": "✨ Special Offers This Season",
+      "title": "Shop the Best <span className=\"text-orange-400\">Products</span> Online",
+      "description": "Discover thousands of quality products at unbeatable prices. Free shipping on orders over 100,000 XAF.",
+      "primaryButtonText": "Shop Now →",
+      "secondaryButtonText": "Learn More",
+      "backgroundImage": "https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=1920"
+    }
   },
-  "subAdmins": [],
+  "subAdmins": [
+    {
+      "id": "sub-admin-001",
+      "name": "Alice Johnson",
+      "email": "alice@example.com",
+      "password": "$2a$10$KnMNeVUCwffRuwp3F1U/ZeCZGEQcBW8GGtdVzSgaiypdGtR5KzLye",
+      "permissions": {
+        "manageProducts": true,
+        "manageOrders": false,
+        "manageLocations": true,
+        "viewReports": false,
+        "viewAnalytics": false
+      },
+      "createdAt": "2025-12-25T08:00:00Z",
+      "updatedAt": "2025-12-28T10:30:00Z",
+      "isActive": true
+    },
+    {
+      "id": "sub-admin-002",
+      "name": "Bob Marketing",
+      "email": "bob@example.com",
+      "password": "$2a$10$KnMNeVUCwffRuwp3F1U/ZeCZGEQcBW8GGtdVzSgaiypdGtR5KzLye",
+      "permissions": {
+        "manageProducts": true,
+        "manageOrders": true,
+        "manageLocations": false,
+        "viewReports": true,
+        "viewAnalytics": false
+      },
+      "createdAt": "2025-12-20T10:15:00Z",
+      "updatedAt": "2025-12-28T09:00:00Z",
+      "isActive": true
+    },
+    {
+      "id": "sub-admin-003",
+      "name": "Claire Support",
+      "email": "claire@example.com",
+      "password": "$2a$10$KnMNeVUCwffRuwp3F1U/ZeCZGEQcBW8GGtdVzSgaiypdGtR5KzLye",
+      "permissions": {
+        "manageProducts": false,
+        "manageOrders": true,
+        "manageLocations": false,
+        "viewReports": true,
+        "viewAnalytics": true
+      },
+      "createdAt": "2025-12-15T14:20:00Z",
+      "updatedAt": "2025-12-28T11:45:00Z",
+      "isActive": true
+    }
+  ],
+  "subAdminActivities": [
+    {
+      "id": "89a60d26-1892-4a72-943e-9f8fae6b1e91",
+      "subAdminId": "30c468ed-96bb-4d6e-b71c-20c74cb44650",
+      "subAdminName": null,
+      "subAdminEmail": null,
+      "action": "delete_subadmin",
+      "details": "Deleted sub-admin: Ndimih",
+      "timestamp": "2025-12-30T13:52:51.793Z",
+      "ipAddress": "localhost"
+    },
+    {
+      "id": "bfb5448f-60d6-47f0-aadc-18c7743ce23e",
+      "subAdminId": null,
+      "action": "create_subadmin",
+      "details": "Created sub-admin: Ndimih (nbntechteam@gmail.com)",
+      "timestamp": "2025-12-30T13:40:38.141Z",
+      "ipAddress": "localhost",
+      "subAdminName": "🏪 SHOP OWNER",
+      "subAdminEmail": "ndimihboclair4@gmail.com"
+    },
+    {
+      "id": "activity-001",
+      "subAdminId": "sub-admin-001",
+      "subAdminName": "Alice Johnson",
+      "subAdminEmail": "alice@example.com",
+      "action": "create_product",
+      "details": "Created new product: Premium Headphones Pro - 45000 FCFA - Electronics category",
+      "timestamp": "2025-12-28T14:30:00Z",
+      "ipAddress": "192.168.1.101"
+    },
+    {
+      "id": "activity-002",
+      "subAdminId": "sub-admin-001",
+      "subAdminName": "Alice Johnson",
+      "subAdminEmail": "alice@example.com",
+      "action": "update_location",
+      "details": "Updated location details for Bamenda store - changed hours to Mon-Sun: 7AM-9PM",
+      "timestamp": "2025-12-28T13:15:00Z",
+      "ipAddress": "192.168.1.101"
+    },
+    {
+      "id": "activity-003",
+      "subAdminId": "sub-admin-002",
+      "subAdminName": "Bob Marketing",
+      "subAdminEmail": "bob@example.com",
+      "action": "update_order",
+      "details": "Updated order #ORD-12345 status from pending to processing",
+      "timestamp": "2025-12-28T12:45:00Z",
+      "ipAddress": "192.168.1.102"
+    },
+    {
+      "id": "activity-004",
+      "subAdminId": "sub-admin-002",
+      "subAdminName": "Bob Marketing",
+      "subAdminEmail": "bob@example.com",
+      "action": "view_report",
+      "details": "Viewed sales report for December 2025 - Total revenue: 2.5M FCFA",
+      "timestamp": "2025-12-28T11:20:00Z",
+      "ipAddress": "192.168.1.102"
+    },
+    {
+      "id": "activity-005",
+      "subAdminId": "sub-admin-003",
+      "subAdminName": "Claire Support",
+      "subAdminEmail": "claire@example.com",
+      "action": "update_order",
+      "details": "Updated order #ORD-67890 status from processing to shipped - tracking: DHL123456",
+      "timestamp": "2025-12-28T10:00:00Z",
+      "ipAddress": "192.168.1.103"
+    },
+    {
+      "id": "activity-006",
+      "subAdminId": "sub-admin-003",
+      "subAdminName": "Claire Support",
+      "subAdminEmail": "claire@example.com",
+      "action": "view_analytics",
+      "details": "Viewed customer analytics - Top region: Douala (450 orders), Avg order value: 125000 FCFA",
+      "timestamp": "2025-12-28T09:30:00Z",
+      "ipAddress": "192.168.1.103"
+    },
+    {
+      "id": "activity-007",
+      "subAdminId": "sub-admin-004",
+      "subAdminName": "David Inventory",
+      "subAdminEmail": "david@example.com",
+      "action": "update_product",
+      "details": "Updated product 'Smart Watch' - increased stock by 50 units (100 → 150)",
+      "timestamp": "2025-12-28T08:15:00Z",
+      "ipAddress": "192.168.1.104"
+    },
+    {
+      "id": "activity-008",
+      "subAdminId": "sub-admin-001",
+      "subAdminName": "Alice Johnson",
+      "subAdminEmail": "alice@example.com",
+      "action": "delete_product",
+      "details": "Deleted discontinued product: Old Model Phone - was in stock of 10 units",
+      "timestamp": "2025-12-27T16:45:00Z",
+      "ipAddress": "192.168.1.101"
+    },
+    {
+      "id": "activity-009",
+      "subAdminId": "sub-admin-002",
+      "subAdminName": "Bob Marketing",
+      "subAdminEmail": "bob@example.com",
+      "action": "create_product",
+      "details": "Created new product: Wireless Charger - 12000 FCFA - Accessories category",
+      "timestamp": "2025-12-27T14:30:00Z",
+      "ipAddress": "192.168.1.102"
+    },
+    {
+      "id": "activity-010",
+      "subAdminId": "sub-admin-004",
+      "subAdminName": "David Inventory",
+      "subAdminEmail": "david@example.com",
+      "action": "create_location",
+      "details": "Created new store location: Douala Branch - Address: Deido, Douala",
+      "timestamp": "2025-12-27T11:00:00Z",
+      "ipAddress": "192.168.1.104"
+    },
+    {
+      "id": "activity-011",
+      "subAdminId": "sub-admin-003",
+      "subAdminName": "Claire Support",
+      "subAdminEmail": "claire@example.com",
+      "action": "update_order",
+      "details": "Updated order #ORD-11111 status from shipped to delivered",
+      "timestamp": "2025-12-26T15:20:00Z",
+      "ipAddress": "192.168.1.103"
+    },
+    {
+      "id": "activity-012",
+      "subAdminId": "sub-admin-002",
+      "subAdminName": "Bob Marketing",
+      "subAdminEmail": "bob@example.com",
+      "action": "view_report",
+      "details": "Viewed inventory report - Low stock items: 3 products below 50 units",
+      "timestamp": "2025-12-26T10:45:00Z",
+      "ipAddress": "192.168.1.102"
+    },
+    {
+      "id": "f13c90b9-c336-48e0-a2a7-e0f092791be4",
+      "subAdminId": "sub-admin-004",
+      "subAdminName": null,
+      "subAdminEmail": null,
+      "action": "delete_subadmin",
+      "details": "Deleted sub-admin: David Inventory",
+      "timestamp": "2025-12-30T14:02:44.402Z",
+      "ipAddress": "localhost"
+    },
+    {
+      "id": "34c1174f-32cd-4c39-b9e6-7895a2c582ad",
+      "subAdminId": "7e09d40b-0c9d-443a-9d00-85a22a1481a0",
+      "subAdminName": "NBN",
+      "subAdminEmail": "nbntechteam@gmail.com",
+      "action": "create_subadmin",
+      "details": "Created sub-admin: NBN (nbntechteam@gmail.com)",
+      "timestamp": "2025-12-30T14:07:27.527Z",
+      "ipAddress": "localhost"
+    },
+    {
+      "id": "5cce3a4e-ac6d-43d3-8e34-beb35a2c9ac7",
+      "subAdminId": null,
+      "subAdminName": "🏪 SHOP OWNER",
+      "subAdminEmail": "ndimihboclair4@gmail.com",
+      "action": "delete_subadmin",
+      "details": "Deleted sub-admin: NBN",
+      "timestamp": "2025-12-30T14:17:24.149Z",
+      "ipAddress": "localhost"
+    }
+  ],
+  "mainShopTown": "Bamenda",
+  "freeShippingThreshold": 100000,
+  "regionFreeShipping": {},
   "shippingFees": {
-    "Douala": 0,
+    "Douala": 1016,
     "Yaoundé": 3000,
     "Bafoussam": 5000,
     "Bamenda": 6000,
@@ -215,6 +5434,37 @@
     "Bertoua": 6500,
     "Buea": 2000,
     "Limbe": 2500,
-    "Bafang": 2000
-  }
+    "Bafang": 2001,
+    "Nkong": 2000
+  },
+  "chatMessages": [],
+  "locations": [
+    {
+      "id": "61dc4802-f28e-4557-9d24-006e8d8357d0",
+      "name": "Main Store - Bamenda",
+      "city": "Bamenda",
+      "address": "mile 4, Bamenda, Cameroon",
+      "phone": "+237 6 52 882 753",
+      "email": "bamenda@store.cm",
+      "lat": 4.0511,
+      "lng": 9.7679,
+      "isMainStore": true,
+      "hours": "Mon-Sun: 8AM-8PM",
+      "description": "Our flagship store in the heart of Bamenda"
+    },
+    {
+      "id": "9bfd85cc-77e1-4ed2-a53c-3812dc33ab46",
+      "name": "Buea Branch",
+      "city": "BUEA",
+      "address": "mile 5, Buea, Cameroon",
+      "phone": "+237 6 52 882 753",
+      "email": "buea@store.cm",
+      "lat": 4.1555,
+      "lng": 9.2424,
+      "hours": "Mon-Sun: 8AM-8PM",
+      "description": "Our scenic branch store overlooking Mount Cameroon",
+      "isMainStore": false,
+      "createdAt": "2025-12-30T12:03:31.607Z"
+    }
+  ]
 }
