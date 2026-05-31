@@ -1,6 +1,6 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { formatXAF, getProductImage } from '../utils/format'
+import { formatXAF, getProductImage, resolveAssetUrl } from '../utils/format'
 import { useLanguage } from '../i18n/LanguageContext'
 
 export default function ProductCard({ product, addToCart, toggleWishlist, isInWishlist }) {
@@ -8,15 +8,24 @@ export default function ProductCard({ product, addToCart, toggleWishlist, isInWi
   const displayProduct = translateProduct(product)
   const stock = Number(product.stock || 0)
   const outOfStock = stock <= 0
-  const image = getProductImage(product)
+  const mainImage = getProductImage(product)
   const wished = isInWishlist?.(product.id)
+
+  const subImages = (product.images || []).filter((img) => img?.url)
+  const [activeImage, setActiveImage] = useState(mainImage)
+
+  const handleThumbClick = (event, url) => {
+    event.preventDefault()
+    event.stopPropagation()
+    setActiveImage(resolveAssetUrl(url) || url)
+  }
 
   return (
     <article className="group flex h-full flex-col overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:border-stone-300 hover:shadow-xl">
       <Link to={`/products/${product.id}`} className="block">
         <div className="relative aspect-[4/5] overflow-hidden bg-gray-100">
           <img
-            src={image}
+            src={activeImage}
             alt={displayProduct.displayName}
             className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
             decoding="async"
@@ -38,6 +47,34 @@ export default function ProductCard({ product, addToCart, toggleWishlist, isInWi
           </div>
         </div>
 
+        {subImages.length > 1 && (
+          <div className="flex gap-1.5 overflow-x-auto px-3 pt-2 pb-0 scrollbar-none">
+            {subImages.map((img, index) => {
+              const resolved = resolveAssetUrl(img.url) || img.url
+              const isActive = activeImage === resolved
+              return (
+                <button
+                  key={`${img.url}-${index}`}
+                  type="button"
+                  onClick={(event) => handleThumbClick(event, img.url)}
+                  className={`h-10 w-10 flex-shrink-0 overflow-hidden rounded-lg border-2 transition duration-200 ${
+                    isActive ? 'border-amber-700 opacity-100' : 'border-gray-200 opacity-70 hover:opacity-100 hover:border-stone-400'
+                  }`}
+                  aria-label={`View image ${index + 1}`}
+                >
+                  <img
+                    src={resolved}
+                    alt={`${displayProduct.displayName} view ${index + 1}`}
+                    className="h-full w-full object-cover"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </button>
+              )
+            })}
+          </div>
+        )}
+
         <div className="space-y-2 p-3 sm:p-4">
           <p className="text-[11px] font-bold uppercase tracking-wide text-amber-700 line-clamp-1">
             {displayProduct.displayCategory || t('product')}
@@ -45,9 +82,6 @@ export default function ProductCard({ product, addToCart, toggleWishlist, isInWi
           <h2 className="min-h-[2.5rem] text-sm font-black leading-tight text-gray-950 line-clamp-2 sm:text-base">
             {displayProduct.displayName}
           </h2>
-          <p className="hidden text-xs leading-relaxed text-gray-600 line-clamp-2 sm:block">
-            {displayProduct.displayDescription}
-          </p>
           <div className="flex flex-col gap-1 sm:flex-row sm:items-end sm:justify-between">
             <span className="text-base font-black text-stone-900 sm:text-lg">{formatXAF(product.price)}</span>
             <span className={`text-[11px] font-bold ${outOfStock ? 'text-red-700' : 'text-green-700'}`}>
